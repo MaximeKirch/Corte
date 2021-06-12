@@ -26,17 +26,20 @@ h1 {
 /* Menu */
 
 nav {
-    width: auto;
+    width: 100%;
     display:flex;
-    justify-items: flex-end;
     align-items: center;
+    justify-content: space-around;
     background-color: rgb(51, 51, 51);
     color: white;
     height: 80px;
+    
 }
 
 #menu {
     width: auto;
+    justify-self: flex-end;
+   
     
 }
 
@@ -58,7 +61,12 @@ li {
     margin: 0px 10px;
     border-right: 1px solid white;
     padding-right: 15px;
-    
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgba(141, 140, 140, 0.973);
+    margin-bottom: 5px;
 }
 
 
@@ -74,6 +82,8 @@ a {
     display: flex;
     width: auto;
     height: 500px;
+    justify-content: flex-end;
+    
 }
 
 #imgHero {
@@ -87,12 +97,12 @@ a {
     height: 120px;
     width: 400px;
     display: flex;
-    position: absolute;
+    position: absolute; 
     background-color: rgba(50, 50, 50, 0.7);
-    margin-top: 350px;
-    margin-left: 500px;
-    
     justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    margin-right: 50px;
 }
 
 
@@ -107,23 +117,30 @@ a {
 }
 
 #general {
-    border: 1px solid black;
+   
     width: 50%;
    
 }
 
 #local {
-    border: 1px solid black;
     width: 50%;
     margin-left: 10px;
 }
 
 .titreHistoireG {
-    background-color: rgb(10, 141, 202)
+    padding-left: 10px;
+    display: flex;
+    background-color: rgb(66, 166, 212);
+    height: 35px;
+    align-items: center;
 }
 
 .titreHistoireD {
-    background-color: rgba(219, 131, 16, 0.74);
+    padding-left: 10px;
+    height: 35px;
+    background-color: rgba(245, 162, 53, 0.74);
+    display: flex;
+    align-items: center;
 
 }
 
