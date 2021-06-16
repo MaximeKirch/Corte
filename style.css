@@ -89,7 +89,7 @@ a {
 #imgHero {
     z-index:0;
     width: 100%;
-    height: 500px;
+    height: auto;
 
 }
 
@@ -113,6 +113,9 @@ a {
     display: flex;
     margin: 20px 10px;
     justify-self: space-around;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
 
 }
 
