@@ -1,4 +1,24 @@
-/* General */
+/* INDEX 
+
+1. GENERAL
+    a. General
+    b. Menu
+    c. Footer
+
+
+2. INDEX
+    a. Hero Banner
+    b. Body Flexboxs
+   
+
+3. ADRESSES
+    a. Container 
+
+    -------------------------------------------------------------------------------------------------- */
+    
+       /* 1. GENERAL */ 
+
+/* a. General */
 
 * {
     margin: 0;
@@ -19,11 +39,19 @@ h1 {
     font-size: 40px;
     margin-top: 30px;
     color: rgb(255,255,255);
+    font-family: 'Merriweather', sans-serif;
 
 }
 
+h2 {
+    font-family: 'Merriweather', sans-serif;
+}
 
-/* Menu */
+p {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* b. Menu */
 
 nav {
     width: 100%;
@@ -61,6 +89,7 @@ li {
     margin: 0px 10px;
     border-right: 1px solid white;
     padding-right: 15px;
+    font-family: 'Mulish', sans-serif;
 }
 
 a:hover {
@@ -75,8 +104,36 @@ a {
     text-decoration: none;
 }
 
+/* c. Footer */
 
-/* Hero banner */
+footer {
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    bottom: 0;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+    
+}
+
+footer p {
+    color:rgb(238, 240, 241);
+    font-size: 12px;
+}
+
+footer li {
+    font-size: 12px;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+    /* 2. INDEX */
+
+
+
+/* a. Hero banner */
 
 .hero {
     display: flex;
@@ -106,7 +163,7 @@ a {
 }
 
 
-/* Body flexboxs */
+/* b. Body flexboxs */
 
 .histoire {
     width: auto;
@@ -115,14 +172,14 @@ a {
     justify-self: space-around;
     margin-top: 20px;
     margin-bottom: 50px;
+}
 
-
+.histoire h2 {
+    font-size: 20px;
 }
 
 #general {
-   
-    width: 50%;
-   
+   width: 50%;
 }
 
 #local {
@@ -150,29 +207,54 @@ a {
 
 .paragrapheHistoire {
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
 
-/* Footer */
-footer {
-    display: flex;
-    background-color: rgb(51, 51, 51);
-    bottom: 0;
-    justify-content: space-around;
-    height: 30px;
-    align-items: center;
+
+
+/* ------------------------------------------------------------------------------------------------*/
+
+/* 2. ADRESSES */
+
+    /* a. Container */
+
+    #container {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+       
+    }
+
+    .restaurant {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .restaurant h2 {
+        margin-bottom: 10px;
+    }
+
+    .restaurant p {
+        padding: 0px 30px;
+        margin-top: 10px;
+    }
+
+    .imgRestaurant {
+        margin-top: 30px;
+        width: auto;
+        height: auto;
+    }
+
+
+   
     
-}
+    
 
-footer p {
-    color:rgb(238, 240, 241);
-    font-size: 12px;
-}
-
-footer li {
-    font-size: 12px;
-}
 
 
 
