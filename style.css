@@ -1,4 +1,24 @@
-/* General */
+/* INDEX 
+
+1. GENERAL
+    a. General
+    b. Menu
+    c. Footer
+
+
+2. INDEX
+    a. Hero Banner
+    b. Body Flexboxs
+   
+
+3. ADRESSES
+    a. Container 
+
+    -------------------------------------------------------------------------------------------------- */
+    
+       /* 1. GENERAL */ 
+
+/* a. General */
 
 * {
     margin: 0;
@@ -19,24 +39,35 @@ h1 {
     font-size: 40px;
     margin-top: 30px;
     color: rgb(255,255,255);
+    font-family: 'Merriweather', sans-serif;
 
 }
 
+h2 {
+    font-family: 'Merriweather', sans-serif;
+}
 
-/* Menu */
+p {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* b. Menu */
 
 nav {
-    width: auto;
+    width: 100%;
     display:flex;
-    justify-items: flex-end;
     align-items: center;
+    justify-content: space-around;
     background-color: rgb(51, 51, 51);
     color: white;
     height: 80px;
+    
 }
 
 #menu {
     width: auto;
+    justify-self: flex-end;
+   
     
 }
 
@@ -58,7 +89,13 @@ li {
     margin: 0px 10px;
     border-right: 1px solid white;
     padding-right: 15px;
-    
+    font-family: 'Mulish', sans-serif;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgba(141, 140, 140, 0.973);
+    margin-bottom: 5px;
 }
 
 
@@ -67,74 +104,8 @@ a {
     text-decoration: none;
 }
 
+/* c. Footer */
 
-/* Hero banner */
-
-.hero {
-    display: flex;
-    width: auto;
-    height: 500px;
-}
-
-#imgHero {
-    z-index:0;
-    width: 100%;
-    height: 500px;
-
-}
-
-#welcome {
-    height: 120px;
-    width: 400px;
-    display: flex;
-    position: absolute;
-    background-color: rgba(50, 50, 50, 0.7);
-    margin-top: 350px;
-    margin-left: 500px;
-    
-    justify-content: center;
-}
-
-
-/* Body flexboxs */
-
-.histoire {
-    width: auto;
-    display: flex;
-    margin: 20px 10px;
-    justify-self: space-around;
-
-}
-
-#general {
-    border: 1px solid black;
-    width: 50%;
-   
-}
-
-#local {
-    border: 1px solid black;
-    width: 50%;
-    margin-left: 10px;
-}
-
-.titreHistoireG {
-    background-color: rgb(10, 141, 202)
-}
-
-.titreHistoireD {
-    background-color: rgba(219, 131, 16, 0.74);
-
-}
-
-
-.paragrapheHistoire {
-    margin-top: 10px;
-}
-
-
-
-/* Footer */
 footer {
     display: flex;
     background-color: rgb(51, 51, 51);
@@ -153,6 +124,137 @@ footer p {
 footer li {
     font-size: 12px;
 }
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+    /* 2. INDEX */
+
+
+
+/* a. Hero banner */
+
+.hero {
+    display: flex;
+    width: auto;
+    height: 500px;
+    justify-content: flex-end;
+    
+}
+
+#imgHero {
+    z-index:0;
+    width: 100%;
+    height: auto;
+
+}
+
+#welcome {
+    height: 120px;
+    width: 400px;
+    display: flex;
+    position: absolute; 
+    background-color: rgba(50, 50, 50, 0.7);
+    justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+
+/* b. Body flexboxs */
+
+.histoire {
+    width: auto;
+    display: flex;
+    margin: 20px 10px;
+    justify-self: space-around;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.histoire h2 {
+    font-size: 20px;
+}
+
+#general {
+   width: 50%;
+}
+
+#local {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.titreHistoireG {
+    padding-left: 10px;
+    display: flex;
+    background-color: rgb(66, 166, 212);
+    height: 35px;
+    align-items: center;
+}
+
+.titreHistoireD {
+    padding-left: 10px;
+    height: 35px;
+    background-color: rgba(245, 162, 53, 0.74);
+    display: flex;
+    align-items: center;
+
+}
+
+
+.paragrapheHistoire {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------*/
+
+/* 2. ADRESSES */
+
+    /* a. Container */
+
+    #container {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+       
+    }
+
+    .restaurant {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .restaurant h2 {
+        margin-bottom: 10px;
+    }
+
+    .restaurant p {
+        padding: 0px 30px;
+        margin-top: 10px;
+    }
+
+    .imgRestaurant {
+        margin-top: 30px;
+        width: auto;
+        height: auto;
+    }
+
+
+   
+    
+    
+
 
 
 
