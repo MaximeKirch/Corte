@@ -19,6 +19,8 @@
        /* 1. GENERAL */ 
 
 /* a. General */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mulish:wght@200&display=swap');
+
 
 * {
     margin: 0;
@@ -251,10 +253,38 @@ footer li {
     }
 
 
-   
+   /* ------------------------------------------------------------------------------------------------*/
+
+/* 3. Terre */
+
+#presentation h1, p{
+    text-align: center;
+    color: black;
+}
+
     
-    
+#photosTerre{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+#photosTerre img{
+    max-width: auto;
+    margin: 50px;
+}
 
+  /* ------------------------------------------------------------------------------------------------*/
 
+/* 4. Mer */
 
+#blocFlex{
+    display: flex;
+}
+
+#présentation2 h1{
+    color: black;
+    text-align: center;
+}
