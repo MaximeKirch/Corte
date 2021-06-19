@@ -1,12 +1,14 @@
 # G1-siteCorte
+
 -------------------------------------------------------
 19/06/2021 :
 
 - Mise en commun nav et footer
 - Ajout page contact
+- Indentation sur chaques pages
+- Lien des pages html
 
 -------------------------------------------------------
-
 
 18/06/2021 :
 

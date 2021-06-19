@@ -14,11 +14,24 @@
 3. ADRESSES
     a. Container 
 
+4. Terre
+    a.
+    b.
+
+5. Mer
+    a.
+    b.
+
+6. Contact
+    a. Formulaire
+    b. Map
+
     -------------------------------------------------------------------------------------------------- */
     
        /* 1. GENERAL */ 
 
 /* a. General */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mulish:wght@200&display=swap');
 
 
@@ -254,7 +267,7 @@ footer li {
 
    /* ------------------------------------------------------------------------------------------------*/
 
-/* 3. Terre */
+/* 4. Terre */
 
 #presentation h1, p{
     text-align: center;
@@ -277,7 +290,7 @@ footer li {
 
   /* ------------------------------------------------------------------------------------------------*/
 
-/* 4. Mer */
+/* 5. Mer */
 
 #blocFlex{
     display: flex;
@@ -290,9 +303,11 @@ footer li {
 
 /* -------------------------------------------*/
 
-/* 5. Contact */
+/* 6. Contact */
 
-form {
+    /* a. Formulaire */
+
+  form {
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
@@ -345,6 +360,8 @@ form {
        entre les étiquettes et les champs texte */
     margin-left: .5em;
   }
+
+    /* b. Map */
 
   .card h2{
     order:-1;
