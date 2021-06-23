@@ -129,7 +129,7 @@ footer {
     bottom: 0;
     justify-content: space-around;
     align-items: center;
-    position:absolute;
+    position:relative;
     height:2.5rem;
     width:100%;  
 }
@@ -189,7 +189,7 @@ footer li {
     margin: 20px 10px;
     justify-self: space-around;
     margin-top: 20px;
-    margin-bottom: 50px;
+    height: auto;
 }
 
 .histoire h2 {
@@ -239,6 +239,7 @@ footer li {
         display: flex;
         width: auto;
         flex-direction: column;
+    
        
     }
 
