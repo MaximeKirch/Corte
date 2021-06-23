@@ -1,4 +1,8 @@
 # G1-siteCorte
+23/06/2021 :
+
+- Création d'un carrousel type avec fichiers HTML, CSS, JS :
+    Le code du carrousel est disponible dans les fichiers du même nom mais n'est pas encore accessible depuis le site ( pas de lien cliquable). Dites moi ce que vous en pensez.
 
 -------------------------------------------------------
 19/06/2021 :
