@@ -1,0 +1,282 @@
+    
+       /* 1. GENERAL */ 
+
+/* a. General */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mulish:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(238, 240, 241);
+}
+
+#main {
+    width: 50%;
+    margin: auto;
+    min-height:100vh;
+    position:relative;
+    background-color: rgb(255, 255, 255 );
+}
+
+h1 {
+    font-size: 42px;
+    margin-top: 30px;
+    color: rgb(39, 39, 39);
+    font-family: 'Merriweather', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* b. Menu */
+
+nav {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    height: 80px;
+    
+}
+
+#menu {
+    width: auto;
+    justify-self: flex-end;
+   
+    
+}
+
+#logo {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+}
+
+ul {
+     display: flex;
+     
+    
+}
+
+li {
+    list-style: none;
+    margin: 0px 10px;
+    border-right: 1px solid white;
+    padding-right: 15px;
+    font-family: 'Mulish', sans-serif;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgba(141, 140, 140, 0.973);
+    margin-bottom: 5px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* c. Footer */
+
+footer {
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    height:2.5rem;
+    width:100%;  
+}
+
+footer p {
+    color:rgb(238, 240, 241);
+    font-size: 12px;
+}
+
+footer li {
+    font-size: 12px;
+}
+
+
+#explorez h1 {
+    color:rgb(250, 104, 87);
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+}
+
+.title h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.subTitle {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.divertir, .reposer {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.divertir h3, .reposer h3 {
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.divertir .description, .reposer .description {
+    font-size: 18px;
+}
+
+/* Carrousel */ 
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 300px;
+    justify-items: center;
+}
+
+/* Slider container */ 
+
+
+.slideshow {
+    max-width: 300px; 
+    position: relative;
+    margin: auto;
+
+}
+
+/* Cacher les images par défaut */ 
+
+.mySlides {
+    display: none;
+    
+}
+
+/* Bouton suivant & précédent */ 
+
+.prev, .next {
+
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top : -22px;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight:bold; 
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+}
+
+/* Position du bouton next sur la droite */ 
+
+.next {
+    right: 0;
+    border-radius: 3px 0 3px 0;
+}
+
+/* Quand survolé, ajoute un background de couleur */ 
+
+.next:hover, .prev:hover {
+    background-color: rgba(0,0,0, 0.8);
+    color: rgba(190, 190, 190, 0.8);
+}
+
+/* Texte commentaire */ 
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    margin: 20px 0px 20px 20px;
+    position: absolute;
+    bottom: 8px;
+    width: auto;
+    text-align: center;
+    background-color: rgba(60, 60, 60, 0.8);
+}
+
+
+/* Numéro d'image */
+/*.numberText {
+    color: rgba(60, 60, 60, 0.8);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}*/
+
+/* Les indicateurs en points */ 
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Animation transition */ 
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
