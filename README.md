@@ -1,4 +1,11 @@
 # G1-siteCorte
+
+03/07/2021 : 
+
+- Création de la page découvrez avec reproduction module TripAdvisor
+- Ajout d'images 
+
+------------------------------------------------------
 23/06/2021 :
 
 - Création d'un carrousel type avec fichiers HTML, CSS, JS :
