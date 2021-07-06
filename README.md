@@ -1,4 +1,10 @@
 # G1-siteCorte
+06/07/2021
+
+- Reprise de la page contact, modification du CSS et implantation JS sur formulaire
+- Mise en ligne de la page Découvrez
+
+------------------------------------------------------
 
 03/07/2021 : 
 
