@@ -313,7 +313,7 @@ footer li {
     .formulaire {
        margin-bottom: 50px;
        height: auto;
-       width: auto;
+       width: 100%;
        justify-content: center;
        display: flex;
        flex-wrap: wrap;
@@ -359,12 +359,9 @@ footer li {
 
     #contactForm {
     
-    background-image: url(https://picsum.photos/seed/picsum/1250/600);
-    background-repeat:no-repeat;
-    z-index: 0;
-   
-    
-       display: flex;
+        background-image: url(https://picsum.photos/seed/picsum/1800/600);
+        background-repeat:no-repeat;
+        display: flex;
        flex-direction: column;
        width: 100%;
        height: 600px;
