@@ -15,8 +15,9 @@
     a. Container 
 
 4. Terre
-    a.
-    b.
+    a. Slider
+    b. Boutons
+    c. Thumbnail (légende)
 
 5. Mer
     a.
@@ -45,7 +46,7 @@ body {
 }
 
 #main {
-    width: 50%;
+    width: 75%;
     margin: auto;
     min-height:100vh;
     position:relative;
@@ -129,9 +130,9 @@ footer {
     bottom: 0;
     justify-content: space-around;
     align-items: center;
-    position:absolute;
+    position:relative;
     height:2.5rem;
-    width:100%;  
+    width:100%;
 }
 
 footer p {
@@ -264,42 +265,252 @@ footer li {
         height: auto;
     }
 
+    /* ------------------------------------------------------------------------------------------------*/
+
+    /* 4. Explorer */
+
+    /* -- --- TERRE -- --- */
+
+    #explorerContainer h1{
+        color: black;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    /* Disposition des images style ZigZag avec flexbox */
+
+    #terre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rightOne, #leftOne{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 60px;
+        margin-top: 60px;
+        position: relative;
+    }
+
+    #rightTwo, #leftTwo{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 60px;
+        margin-top: 60px;
+        position: relative;
+    }
+
+    /* Blocs textes présentation images */
+
+    .imgBlockOne{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .imgBlockTwo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .textBlockOne{
+        margin: 50px;
+        text-align: justify;
+        
+    }
+
+    .textBlockTwo{
+        margin: 50px;
+        text-align: justify;
+    }
+
+    /* Images responsive */
+
+    #one,#two, #three, #four{
+        width: 50%;
+        height: auto;
+        border: 2px solid black;
+        cursor: pointer;
+        
+    }
+
+    #one, #three{
+        box-shadow: 3px 3px 3px rgb(54, 54, 54);
+    }
+
+    #two, #four{
+        box-shadow: -3px 3px 3px rgb(54, 54, 54);
+    }
+
+    /* Blocs titre sur images */
+
+    .titleBlockOne{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    .titleBlockTwo{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    /* Modal Images */
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
    /* ------------------------------------------------------------------------------------------------*/
 
-/* 4. Terre */
+/* 4. Terre
 
 #presentation h1, p{
     text-align: center;
     color: black;
 }
 
+
+/* a. Slider */
+
+/* .slider{
+    box-sizing: border-box;
+    margin: 30px;
     
-#photosTerre{
-    width: 800px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-#photosTerre img{
-    max-width: auto;
-    margin: 50px;
+
+.sliderTerre{
+    position: relative;
 }
 
-  /* ------------------------------------------------------------------------------------------------*/
+
+.slidePages{
+    display: none;
+} */
+
+/* b. Boutons */
+/* .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 30px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgwhiteba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color:rgb(255, 0, 0);
+    font-size: 18px;
+    padding: 255px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    padding: 2px 16px;
+    color: white;
+}
+
+#caption{
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.pic{
+    display: none;
+} */
+
+
+
 
 /* 5. Mer */
 
-#blocFlex{
+/* #blocFlex{
     display: flex;
+
 }
 
 #présentation2 h1{
     color: black;
     text-align: center;
-}
+} */
 
 /* -------------------------------------------*/
 
@@ -370,6 +581,7 @@ footer li {
 
   section {
       display:flex;
+      flex-direction: column;
   }
 
   .card {

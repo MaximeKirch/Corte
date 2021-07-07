@@ -33,20 +33,123 @@
             </div>
         </nav>
 
+
     <!-- Présentation -->
-            <div id="presentation">
+        <div id="blocFlex">
+            <div id="présentation2">
                 <h1>Lieux à visiter</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis soluta cumque quae fugit quidem repellendus velit eum omnis voluptas reprehenderit deserunt, ea dolorum quaerat atque minima esse. Assumenda, soluta?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis soluta cumque quae fugit quidem repellendus velit eum omnis voluptas reprehenderit deserunt, ea dolorum quaerat atque minima esse. Assumenda, soluta?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis soluta cumque quae fugit quidem repellendus velit eum omnis voluptas reprehenderit deserunt, ea dolorum quaerat atque minima esse. Assumenda, soluta?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis soluta cumque quae fugit quidem repellendus velit eum omnis voluptas reprehenderit deserunt, ea dolorum quaerat atque minima esse. Assumenda, soluta?</p>
             </div>
 
-    <!-- Photos Lieux côté terre -->
-            <div id="photosTerre">
-                <img src="https://picsum.photos/300/200"> 
-                <img src="https://picsum.photos/300/200">   
-                <img src="https://picsum.photos/300/200">  
-                <img src="https://picsum.photos/300/200">
-            </div>   
-        </section>
+<!-- Slider Plages -->
+            <div id="photosMer">
+                <img src="Images/Arche.JPG" width="20%">
+                <img src="Images/restonica.jpg" width="30%">   
+                <img src="Images/lacNino.jpg" width="30%">     
+            </div>
+        </div>
+
+
+    <!-- Présentation -->
+            <div id="presentation">
+                <h1>Plages à visiter</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis soluta cumque quae fugit quidem repellendus velit eum omnis voluptas reprehenderit deserunt, ea dolorum quaerat atque minima esse. Assumenda, soluta?</p>
+            </div>
+    <!-- Partie slider -->
+
+            <div class="slider">
+                    <div class="slideTerre">
+
+                        <div class="slidePages">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="Images/calanquesPiana.jpg" style="width:100%">
+                        </div>
+
+                        <div class="slidePages">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="Images/plageArgent.jpg" style="width:100%">
+                        </div>
+
+                        <div class="slidePages">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="Images/saleccia.jpg" style="width:100%">
+                        </div>
+
+                        <div class="slidePages">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="Images/santaGiulia.jpg" style="width:100%">
+                        </div>
+
+    <!-- Boutons slider -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Titre légende -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+
+    <!-- Thumbnail (légende) -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="Images/calanquesPiana.jpg" style="width:100%" onclick="currentSlide(1)" alt="Calanques Piana">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/plageArgent.jpg" style="width:100%" onclick="currentSlide(1)" alt="Plage Argent">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/saleccia.jpg" style="width:100%" onclick="currentSlide(1)" alt="Saleccia">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/santaGiulia.jpg" style="width:100%" onclick="currentSlide(1)" alt="Santa Giulia">
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+    <!-- Javascript : Affichage de la photo selectionnée  -->
+
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+    // Next/previous buttons
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+    // Thumbnail 
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+
+            let slides = document.getElementsByClassName("slidePages");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            
+
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+    </script>
 
     <!-- Footer -->        
         <footer>
