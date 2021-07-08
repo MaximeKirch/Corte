@@ -35,8 +35,11 @@
 
         <div id="explorerContainer">
             <h1>Lieux à visiter</h1>
-    
+                <h2 id="titleTerre">Côté Terre</h2>
+            <hr>
+
             <div id="terre">
+                
                 <div id="leftOne">
                     <div class="imgBlockOne">
                         <img id="one" src="Images/archeP.JPG" alt="archeP">
@@ -47,9 +50,8 @@
                         <div class="titleBlockOne">
                             <h3>L'arche de Corte</h3>
                         </div>
-                        
                 </div>
-
+                <hr>
                 <div id="leftTwo">
                     <div class="imgBlockTwo">
                         <img id="two" src="Images/lacNino.jpg" alt="lacNino">
@@ -60,9 +62,8 @@
                         <div class="titleBlockTwo">
                             <h3>Le Lac de Nino</h3>
                         </div>
-                        
                 </div>
-
+                <hr>
                 <div id="rightOne">
                     <div class="imgBlockOne">
                         <img id="three"src="Images/restonica.jpg" alt="restonica">
@@ -73,9 +74,8 @@
                         <div class="titleBlockOne">
                             <h3>La Vallée de la Restonica</h3>
                         </div>
-                        
                 </div>
-
+                <hr>
                 <div id="rightTwo">
                     <div class="imgBlockTwo">
                         <img id="four" src="Images/monteCinto.jpg" alt="monteCinto">
@@ -85,11 +85,56 @@
                     </div>
                         <div class="titleBlockTwo">
                             <h3>Le Monte Cinto</h3>
-                        </div>
-                        
-                        
+                        </div>              
+                </div>
+                <hr>
+            </div>
+
+            <div id="mer">
+                <h2 id="titleMer">Côté Mer</h2>
+                
+            <!-- Slider container -->
+                <div class="slideContainer">
+                    
+                    <div class="slideImg fade">
+                        <div class="numbertext">1 / 4</div>
+                            <img src="Images/calanquesPiana.jpg" style="width:100%">
+                                <div class="text">Calanques De Piana</div>
+                    </div>
+                  
+                    <div class="slideImg fade">
+                        <div class="numbertext">2 / 4</div>
+                            <img src="Images/plageArgent.jpg" style="width:100%">
+                                <div class="text">La Plage d'Argent</div>
+                    </div>
+                  
+                    <div class="slideImg fade">
+                        <div class="numbertext">3 / 4</div>
+                            <img src="Images/saleccia.jpg" style="width:100%">
+                                <div class="text">La Plage de Saleccia</div>
+                    </div>
+
+                    <div class="slideImg fade">
+                        <div class="numbertext">4 / 4</div>
+                            <img src="Images/santaGiulia.jpg" style="width:100%">
+                                <div class="text">Santa Giulia</div>
+                    </div>
+                  
+                <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
                 </div>
 
+                  <br>
+                  
+                <!-- The dots bottom images -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
             </div>
         </div>
     
@@ -121,5 +166,8 @@
             </ul>
         </footer>
     </div>
+
+    <!-- Js Page ADDED -->
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

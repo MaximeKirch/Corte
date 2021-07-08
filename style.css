@@ -275,6 +275,17 @@ footer li {
         color: black;
         text-align: center;
         margin-top: 50px;
+        text-transform: uppercase;
+    }
+
+    #titleTerre{
+        color: grey;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    hr{
+        margin: 40px;
     }
     
     /* Disposition des images style ZigZag avec flexbox */
@@ -287,17 +298,15 @@ footer li {
     #rightOne, #leftOne{
         display: flex;
         justify-content: flex-end;
-        margin-right: 60px;
-        margin-top: 60px;
         position: relative;
+        margin-right: 40px;
     }
 
     #rightTwo, #leftTwo{
         display: flex;
         justify-content: flex-start;
-        margin-left: 60px;
-        margin-top: 60px;
         position: relative;
+        margin-left: 40px;
     }
 
     /* Blocs textes présentation images */
@@ -306,12 +315,16 @@ footer li {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        width: 100%;
+        height: auto;
     }
 
     .imgBlockTwo{
         display: flex;
         flex-direction: row;
         align-items: center;
+        
+
     }
 
     .textBlockOne{
@@ -365,8 +378,118 @@ footer li {
 
     /* Modal Images */
 
+
+
+
+
+
+    /* Slider Plages */
+
+    #titleMer{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: grey;
+    }
+
+    #mer img{
+        border: 2px solid black;
+    }
+
+    .slideContainer{
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Hide img by default */
+
+    .slideImg {
+        display: none;
+    }
+
+    /* Style buttons prev/next + position */
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color:white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Style number text + caption text */
+
+    .text {
+        color: black;
+        font-size: 25px;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: red;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Buttons below img */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        margin-bottom: 40px;
+    }
     
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Animation fading img  */
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
     
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+      
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
 
 
 
