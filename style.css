@@ -287,6 +287,15 @@ footer li {
     hr{
         margin: 40px;
     }
+
+    img{
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    img:hover{
+        opacity: 0.8;
+    }
     
     /* Disposition des images style ZigZag avec flexbox */
 
@@ -376,14 +385,75 @@ footer li {
         padding: 20px;
     }
 
-    /* Modal Images */
+    /* -- Modal Images -- */
 
+    /* Modal display style */
 
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.9); 
+      }
 
+    .modalImg {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
 
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
 
+    /* Button close style */
 
-    /* Slider Plages */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    close:hover,.close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+      
+    /* Animation zoom */
+      
+    .modalImg, #modalCaption {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom{
+        from {transform: scale(0);}
+        to{transform: scale(1);}
+    }
+
+    
+
+    /* -- Slider Plages -- */
 
     #titleMer{
         margin-top: 10px;
@@ -491,153 +561,9 @@ footer li {
         to {opacity: 1}
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-   /* ------------------------------------------------------------------------------------------------*/
-
-/* 4. Terre
-
-#presentation h1, p{
-    text-align: center;
-    color: black;
-}
-
-
-/* a. Slider */
-
-/* .slider{
-    box-sizing: border-box;
-    margin: 30px;
-    
-}
-
-
-.sliderTerre{
-    position: relative;
-}
-
-
-.slidePages{
-    display: none;
-} */
-
-/* b. Boutons */
-/* .prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    margin-right: 30px;
-}
-
-
-.prev:hover,
-.next:hover {
-  background-color: rgwhiteba(0, 0, 0, 0.8);
-}
-
-.numbertext {
-    color:rgb(255, 0, 0);
-    font-size: 18px;
-    padding: 255px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.caption-container {
-    text-align: center;
-    background-color: rgb(51, 51, 51);
-    padding: 2px 16px;
-    color: white;
-}
-
-#caption{
-    color: white;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column {
-    float: left;
-    width: 25%;
-}
-
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.pic{
-    display: none;
-} */
-
-
-
-
-/* 5. Mer */
-
-/* #blocFlex{
-    display: flex;
-
-}
-
-#présentation2 h1{
-    color: black;
-    text-align: center;
-} */
-
 /* -------------------------------------------*/
 
-/* 6. Contact */
+/* 5. Contact */
 
     /* a. Formulaire */
 
