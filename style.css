@@ -88,7 +88,7 @@ nav {
 
                 /* Cacher le menu reponsive */
 
-    #hamburgerIcon, #menuResponsive {
+    #burger, #menuResponsive {
         display: none;
     }
 
@@ -100,13 +100,14 @@ nav {
 
 #menu {
     width: auto;
-    justify-self: flex-end;
+    align-content: center;
 }
 
 #logo {
-    position: relative;
+    
+    
     width: auto;
-    height: auto;
+   
     margin-left: 10px;
 }
 
@@ -816,7 +817,7 @@ footer li {
 
         #logo {
             display:flex;
-            justify-self:flex-start;
+            align-content: center;
         }
 
         #menuResponsive {
@@ -874,7 +875,7 @@ footer li {
         
         }
 
-        #hambugerIcon {
+        #burger {
             
             display: flex;
             position: relative;
