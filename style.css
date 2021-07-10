@@ -882,7 +882,7 @@ footer li {
             margin: 16px;
             width: 33px;
             height: 28px;
-            z-index: 100;
+            z-index: 99;
             user-select: none;
             cursor: pointer;
         }
