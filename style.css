@@ -15,8 +15,9 @@
     a. Container 
 
 4. Terre
-    a.
-    b.
+    a. Slider
+    b. Boutons
+    c. Thumbnail (légende)
 
 5. Mer
     a.
@@ -45,7 +46,7 @@ body {
 }
 
 #main {
-    width: 70%;
+    width: 75%;
     margin: auto;
     min-height:100vh;
     position:relative;
@@ -132,7 +133,7 @@ footer {
     align-items: center;
     position:relative;
     height:2.5rem;
-    width:100%;  
+    width:100%;
 }
 
 footer p {
@@ -266,46 +267,305 @@ footer li {
         height: auto;
     }
 
+    /* ------------------------------------------------------------------------------------------------*/
 
-   /* ------------------------------------------------------------------------------------------------*/
+    /* 4. Explorer */
 
-/* 4. Terre */
+    /* -- --- TERRE -- --- */
 
-#presentation h1, p{
-    text-align: center;
-    color: black;
-}
+    #explorerContainer h1{
+        color: black;
+        text-align: center;
+        margin-top: 50px;
+        text-transform: uppercase;
+    }
+
+    #titleTerre{
+        color: grey;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    hr{
+        margin: 40px;
+    }
+
+    img{
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    img:hover{
+        opacity: 0.8;
+    }
+    
+    /* Disposition des images style ZigZag avec flexbox */
+
+    #terre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rightOne, #leftOne{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin-right: 40px;
+    }
+
+    #rightTwo, #leftTwo{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        margin-left: 40px;
+    }
+
+    /* Blocs textes présentation images */
+
+    .imgBlockOne{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .imgBlockTwo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+
+    }
+
+    .textBlockOne{
+        margin: 50px;
+        text-align: justify;
+        
+    }
+
+    .textBlockTwo{
+        margin: 50px;
+        text-align: justify;
+    }
+
+    /* Images responsive */
+
+    #one,#two, #three, #four{
+        width: 50%;
+        height: auto;
+        border: 2px solid black;
+        cursor: pointer;
+        
+    }
+
+    #one, #three{
+        box-shadow: 3px 3px 3px rgb(54, 54, 54);
+    }
+
+    #two, #four{
+        box-shadow: -3px 3px 3px rgb(54, 54, 54);
+    }
+
+    /* Blocs titre sur images */
+
+    .titleBlockOne{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    .titleBlockTwo{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    /* -- Modal Images -- */
+
+    /* Modal display style */
+
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.9); 
+      }
+
+    .modalImg {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+    /* Button close style */
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    close:hover,.close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+      
+    /* Animation zoom */
+      
+    .modalImg, #modalCaption {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom{
+        from {transform: scale(0);}
+        to{transform: scale(1);}
+    }
 
     
-#photosTerre{
-    width: 800px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-#photosTerre img{
-    max-width: auto;
-    margin: 50px;
-}
+    /* -- Slider Plages -- */
 
-  /* ------------------------------------------------------------------------------------------------*/
+    #titleMer{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: grey;
+    }
 
-/* 5. Mer */
+    #mer img{
+        border: 2px solid black;
+    }
 
-#blocFlex{
-    display: flex;
-}
+    .slideContainer{
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
 
-#présentation2 h1{
-    color: black;
-    text-align: center;
-}
+    /* Hide img by default */
+
+    .slideImg {
+        display: none;
+    }
+
+    /* Style buttons prev/next + position */
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color:white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Style number text + caption text */
+
+    .text {
+        color: black;
+        font-size: 25px;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: red;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Buttons below img */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        margin-bottom: 40px;
+    }
+    
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Animation fading img  */
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+      
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
 
 /* -------------------------------------------*/
 
-/* 6. Contact */
+/* 5. Contact */
 
     /* a. Formulaire */
 
@@ -372,6 +632,7 @@ footer li {
 
   section {
       display:flex;
+      flex-direction: column;
   }
 
   .card {
