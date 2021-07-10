@@ -17,11 +17,17 @@
     <div id="main">
     
     <!-- Barre de navigation -->
-        <nav>
+        <nav class="topnav">
             <div id="logo">
                 <img src="Images/logo.png" alt="Logo ville de Corte">
+                <h1 id="burger">☰</h1>
+                
             </div>
 
+            <!-- <a href='#' id="homeLink">Menu</a> -->
+        
+            <!-- Menu Standard-->
+            
             <div id="menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -31,6 +37,29 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             </div>
+
+            <!-- Responsive Menu -->
+
+            <!-- Les spans pour faire l'icône hamburger-->
+           
+          
+        
+
+            <nav role="navigation" id="menuResponsive">
+                
+                
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="terre.html">Terre</a></li>
+                    <li><a href="mer.html">Mer</a></li>
+                    <li><a href="decouvrez.html">Découvrez</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="closeMenu">X</a></li>
+                    
+                </ul>
+            
+            </nav>
+
         </nav>
 
     <!-- Image (carousel) de page d'accueil -->
@@ -47,7 +76,8 @@
             <div id="general">
                 <h2 class="titreHistoireG">Une brève histoire de la Corse</h2>
                 <p class="paragrapheHistoire">Pour comprendre la Corse, il est important de comprendre qui elle était avant. La Corse s'est forgé un caractère et une identité en grandissant. A force d'invasions, plus ou moins longues, la Corse s'est construit une identité forte.
-                Au travers des diverses invasions et mélanges de cultures (Phocéens, Romains, Tribus nordiques, Gênes, Maures), la Corse possède un très grand patrimoine culturel.</p>
+                Au travers des diverses invasions et mélanges de cultures (Phocéens, Romains, Tribus nordiques, Gênes, Maures), et possède donc un très grand patrimoine culturel.
+                Un séjour au travers de l'île permet de se rendre compte de ces différentes spécificités dans chacune des régions. Qu'on parle d'église grecque de Cargèse, de temple à Mithra à Mariana en Haute-Corse ou encore des communautés Juives de Padoue et du Nord de l'Italie, la Corse ne manque pas de mixité dans sa culture. </p>
             </div>
 
             <div id="local">
@@ -68,5 +98,7 @@
             </ul>
         </footer>
     </div>
+
+    <script src="script.js"></script>
     </body>
 </html>

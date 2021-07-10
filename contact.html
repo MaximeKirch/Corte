@@ -17,22 +17,50 @@
     <div id="main">
     
     <!-- Barre de navigation -->
-        <nav>
-            <div id="logo">
-                <img src="Images/logo.png" alt="Logo ville de Corte">
-            </div>
+    <nav class="topnav">
+        <div id="logo">
+            <a href="index.html"><img src="Images/logo.png" alt="Logo ville de Corte"></a>
+            <h1 id="burger">☰</h1>
+            
+        </div>
 
-            <div id="menu">
+        <!-- <a href='#' id="homeLink">Menu</a> -->
+    
+        <!-- Menu Standard-->
+        
+        <div id="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="terre.html">Terre</a></li>
+            <li><a href="mer.html">Mer</a></li>
+            <li><a href="decouvrez.html">Découvrez</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Responsive Menu -->
+
+        <!-- Les spans pour faire l'icône hamburger-->
+       
+      
+    
+
+        <nav role="navigation" id="menuResponsive">
+            
+            
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="terre.html">Terre</a></li>
                 <li><a href="mer.html">Mer</a></li>
                 <li><a href="decouvrez.html">Découvrez</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="closeMenu">X</a></li>
+                
             </ul>
-            </div>
+        
         </nav>
 
+    </nav>
        
             
           
@@ -67,6 +95,7 @@
             </div>
 
             <script src="contact.js"></script>
+            <script src="script.js"></script>
         
 
     <!-- Footer -->        

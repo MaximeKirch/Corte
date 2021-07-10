@@ -1,4 +1,12 @@
 # G1-siteCorte
+10/07/2021
+
+- Fix des bugs sur page Index, contact
+- Ajout de contenu historique page Index
+- Création menu burger pour responsive 
+- Début d'adaptation responsive 
+
+-------------------------------------------------------
 06/07/2021
 
 - Reprise de la page contact, modification du CSS et implantation JS sur formulaire

@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="decouvrez.css">
+    <link rel="stylesheet" href="style.css">
     <title>Découvrez Corte</title>
 </head>
 <body>
 
     <div id="main">
          <!-- Barre de navigation -->
-         <nav>
+        <nav class="topnav">
             <div id="logo">
-                <img src="Images/logo.png" alt="Logo ville de Corte">
+                <a href="index.html"><img src="Images/logo.png" alt="Logo ville de Corte"></a>
+                <h1 id="burger">☰</h1>
+                
             </div>
 
+            <!-- <a href='#' id="homeLink">Menu</a> -->
+        
+            <!-- Menu Standard-->
+            
             <div id="menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -25,10 +31,33 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             </div>
+
+            <!-- Responsive Menu -->
+
+            <!-- Les spans pour faire l'icône hamburger-->
+           
+          
+        
+
+            <nav role="navigation" id="menuResponsive">
+                
+                
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="terre.html">Terre</a></li>
+                    <li><a href="mer.html">Mer</a></li>
+                    <li><a href="decouvrez.html">Découvrez</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="closeMenu">X</a></li>
+                    
+                </ul>
+            
+            </nav>
+
         </nav>
 
         <div class="title">
-            <div id="explorez"><h1>Découvrez </h1></div><h1>Corte</h1>
+            <div id="decouvrez"><h1>Découvrez </h1></div><h1>Corte</h1>
         </div>
 
 
@@ -148,5 +177,6 @@
         </footer>
     </div>
     <script src="explorez.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ body {
 }
 
 #main {
-    width: 70%;
+    width: 75%;
     margin: auto;
     min-height:100vh;
     position:relative;
@@ -120,7 +120,7 @@ footer li {
 }
 
 
-#explorez h1 {
+#decouvrez h1 {
     color:rgb(250, 104, 87);
     margin-right: 20px;
     margin-left: 20px;
