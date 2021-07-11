@@ -9,6 +9,7 @@
 2. INDEX
     a. Hero Banner
     b. Body Flexboxs
+    c. Video YouTube
    
 
 3. ADRESSES
@@ -162,6 +163,10 @@ footer li {
     font-size: 12px;
 }
 
+#footerResponsive {
+    display: none;
+}
+
 
 
 /* --------------------------------------------------------------------------------------------- */
@@ -245,6 +250,22 @@ footer li {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+    /* c. Video YouTube */
+
+.video {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+span {
+    height: 10px;
+    width: 70%;
+    color:rgba(50, 50, 50, 0.7)
 }
 
 
@@ -941,6 +962,8 @@ footer li {
 
     
 
+    
+
     #welcome {
         display: none;
         width: auto;
@@ -964,3 +987,14 @@ footer li {
             width: 100%;
             margin-bottom: 50px;
         }
+
+
+    /* c. Découvrez */
+
+    h3 {
+        
+    }
+
+    .info {
+        margin-left: 20px;
+    }
