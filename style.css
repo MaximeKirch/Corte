@@ -15,8 +15,9 @@
     a. Container 
 
 4. Terre
-    a.
-    b.
+    a. Slider
+    b. Boutons
+    c. Thumbnail (légende)
 
 5. Mer
     a.
@@ -45,7 +46,7 @@ body {
 }
 
 #main {
-    width: 50%;
+    width: 75%;
     margin: auto;
     min-height:100vh;
     position:relative;
@@ -62,6 +63,7 @@ h1 {
 
 h2 {
     font-family: 'Merriweather', sans-serif;
+    font-size: 32px;
 }
 
 p {
@@ -124,14 +126,15 @@ a {
 /* c. Footer */
 
 footer {
+    margin-top: 50px;
     display: flex;
     background-color: rgb(51, 51, 51);
     bottom: 0;
     justify-content: space-around;
     align-items: center;
-    position:absolute;
+    position:relative;
     height:2.5rem;
-    width:100%;  
+    width:100%;
 }
 
 footer p {
@@ -189,7 +192,7 @@ footer li {
     margin: 20px 10px;
     justify-self: space-around;
     margin-top: 20px;
-    margin-bottom: 50px;
+    height: auto;
 }
 
 .histoire h2 {
@@ -239,6 +242,7 @@ footer li {
         display: flex;
         width: auto;
         flex-direction: column;
+    
        
     }
 
@@ -264,113 +268,395 @@ footer li {
         height: auto;
     }
 
+    /* ------------------------------------------------------------------------------------------------*/
 
-   /* ------------------------------------------------------------------------------------------------*/
+    /* 4. Explorer */
 
-/* 4. Terre */
+    /* -- --- TERRE -- --- */
 
-#presentation h1, p{
-    text-align: center;
-    color: black;
-}
+    #explorerContainer h1{
+        color: black;
+        text-align: center;
+        margin-top: 50px;
+        text-transform: uppercase;
+    }
+
+    #titleTerre{
+        color: grey;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    hr{
+        margin: 40px;
+    }
+
+    img{
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    img:hover{
+        opacity: 0.8;
+    }
+    
+    /* Disposition des images style ZigZag avec flexbox */
+
+    #terre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rightOne, #leftOne{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin-right: 40px;
+    }
+
+    #rightTwo, #leftTwo{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        margin-left: 40px;
+    }
+
+    /* Blocs textes présentation images */
+
+    .imgBlockOne{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .imgBlockTwo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+
+    }
+
+    .textBlockOne{
+        margin: 50px;
+        text-align: justify;
+        
+    }
+
+    .textBlockTwo{
+        margin: 50px;
+        text-align: justify;
+    }
+
+    /* Images responsive */
+
+    #one,#two, #three, #four{
+        width: 50%;
+        height: auto;
+        border: 2px solid black;
+        cursor: pointer;
+        
+    }
+
+    #one, #three{
+        box-shadow: 3px 3px 3px rgb(54, 54, 54);
+    }
+
+    #two, #four{
+        box-shadow: -3px 3px 3px rgb(54, 54, 54);
+    }
+
+    /* Blocs titre sur images */
+
+    .titleBlockOne{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    .titleBlockTwo{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    /* -- Modal Images -- */
+
+    /* Modal display style */
+
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.9); 
+      }
+
+    .modalImg {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+    /* Button close style */
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    close:hover,.close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+      
+    /* Animation zoom */
+      
+    .modalImg, #modalCaption {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom{
+        from {transform: scale(0);}
+        to{transform: scale(1);}
+    }
 
     
-#photosTerre{
-    width: 800px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-#photosTerre img{
-    max-width: auto;
-    margin: 50px;
-}
+    /* -- Slider Plages -- */
 
-  /* ------------------------------------------------------------------------------------------------*/
+    #titleMer{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: grey;
+    }
 
-/* 5. Mer */
+    #mer img{
+        border: 2px solid black;
+    }
 
-#blocFlex{
-    display: flex;
-}
+    .slideContainer{
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
 
-#présentation2 h1{
-    color: black;
-    text-align: center;
-}
+    /* Hide img by default */
+
+    .slideImg {
+        display: none;
+    }
+
+    /* Style buttons prev/next + position */
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color:white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Style number text + caption text */
+
+    .text {
+        color: black;
+        font-size: 25px;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: red;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Buttons below img */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        margin-bottom: 40px;
+    }
+    
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Animation fading img  */
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+      
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
 
 /* -------------------------------------------*/
 
-/* 6. Contact */
+/* 5. Contact */
 
     /* a. Formulaire */
 
-  form {
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-  }
-  
-  form div + div {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  
-  input, textarea {
-    /* Pour s'assurer que tous les champs texte ont la même police.
-       Par défaut, les textarea ont une police monospace */
-    font: 1em sans-serif;
-  
-    /* Pour que tous les champs texte aient la même dimension */
-    width: 300px;
-    box-sizing: border-box;
-  
-    /* Pour harmoniser le look & feel des bordures des champs texte */
-    border: 1px solid #999;
-  }
-  
-  input:focus, textarea:focus {
-    /* Pour souligner légèrement les éléments actifs */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
-    vertical-align: top;
-  
-    /* Pour donner assez de place pour écrire du texte */
-    height: 5em;
-  }
-  
-  .button {
-    /* Pour placer le bouton à la même position que les champs texte */
-    padding-left: 90px; /* même taille que les étiquettes */
-  }
-  
-  button {
-    /* Cette marge supplémentaire représente grosso modo le même espace que celui
-       entre les étiquettes et les champs texte */
-    margin-left: .5em;
-  }
+    .formulaire {
+       margin-bottom: 50px;
+       height: auto;
+       width: 100%;
+       justify-content: center;
+       display: flex;
+       flex-wrap: wrap;
+    
+    }
+ 
+    
+
+
+    .formulaire h2 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    form {
+      
+        display: flex;
+        flex-direction: column;
+        width: 40% auto;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #inputText, #inputEmail {
+        width: 500px;
+        height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: rgba(50, 50, 50, 0.7);
+        color:rgb(238, 240, 241);
+        font-family: 'Merriweather', arial, sans-serif;
+    }
+
+    #inputMessage {
+        margin-top: 30px;
+        width: 700px;
+        background-color: rgba(50, 50, 50, 0.7);
+        color: rgb(238, 240, 241);
+        font-family: 'Merriweather', arial, sans-serif;
+
+    }
+
+    #contactForm {
+    
+        background-image: url(https://picsum.photos/seed/picsum/1800/600);
+        background-repeat:no-repeat;
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+       height: 600px;
+       margin: 0px 20px;
+      
+    }
+
+    #submitBtn {
+        margin-top: 20px;
+        height: 60px;
+        width: 200px;
+        border-radius: 30px;
+        background-color: rgba(245, 162, 53, 0.74);
+        color: rgb(238, 240, 241);
+        font-size: 32px;
+        font-family: 'Mulish', sans-serif;
+
+    }
 
     /* b. Map */
+
+    #localisation {
+        display: flex;
+        justify-content: center;
+    }
+  
 
   .card h2{
     order:-1;
     text-align:center;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
-  section {
-      display:flex;
-  }
+ 
 
   .card {
     display:flex;

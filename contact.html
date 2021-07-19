@@ -27,53 +27,47 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="terre.html">Terre</a></li>
                 <li><a href="mer.html">Mer</a></li>
-                <li><a href="adresses.html">Adresses</a></li>
+                <li><a href="decouvrez.html">Découvrez</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             </div>
         </nav>
 
-        <section>
-            <div class="card">
-                <h2>Nous contacter</h2>
-                <form action="/contact" method="post">
-                    <div>
-                        <label for="name">Nom :</label>
-                        <input type="text" id="name" name="user_name">
-                    </div>
-                    <div>
-                        <label for="mail">e-mail :</label>
-                        <input type="email" id="mail" name="user_mail">
-                    </div>
-                    <div>
-                        <label for="msg">Message :</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </div>
-                    <div class="button">
-                        <button type="submit">Envoyer le message</button>
-                    </div>
-                </form>
-            </div>
+       
             
-            <div class="card">
+          
+             <div class="card">
+                
                 <h2>Localisation</h2>
+                
                 <div id="localisation">
-                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-                    <script>(function () {
-                        var setting = {"height":300,"width":300,"zoom":17,"queryString":"Office de Tourisme Centru di Corsica - Uffiziu di Turismu Centru di Corsica, La Citadelle, Corte, France","place_id":"ChIJIVO5sQGt0BIRR6gY88lsbSM","satellite":false,"centerCoord":[42.305766964452914,9.148787700000005],"cid":"0x236d6cc9f318a847","lang":"fr","cityUrl":"/france/corte-49095","cityAnchorText":"Carte de Corte (Corsica), Corse, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"517222"};
-                        var d = document;
-                        var s = d.createElement('script');
-                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=517222';
-                        s.async = true;
-                        s.onload = function (e) {
-                                window.OneMap.initMap(setting)
-                            };
-                        var to = d.getElementsByTagName('script')[0];
-                        to.parentNode.insertBefore(s, to);
-                        })();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
+                    
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.7235804514007!2d9.146572816153919!3d42.30576324652017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d0ad01b1b95321%3A0x236d6cc9f318a847!2sOffice%20de%20Tourisme%20Centru%20di%20Corsica%20-%20Uffiziu%20di%20Turismu%20Centru%20di%20Corsica!5e0!3m2!1sfr!2sfr!4v1625601959498!5m2!1sfr!2sfr" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
+                    
                 </div>
             </div>
-        </section>
+
+            <div class="formulaire">
+
+                <h2>Contactez-nous</h2>
+                    
+                
+                <div id="contactForm">
+                
+                <form action="">
+                    <input type="text" name="name" id="inputText" value="Entrez votre nom">
+                    <input type="email" name="mail" id="inputEmail" value="Entrez votre mail">
+                    <textarea name="message" id="inputMessage"  cols="50" rows="15"></textarea>
+                    <button id="submitBtn">Envoyer</button>
+                </form>
+                </div>
+            </div>
+
+            <script src="contact.js"></script>
+        
 
     <!-- Footer -->        
         <footer>
@@ -82,7 +76,7 @@
                 <li><a href="#">Politique en matière de cookies</a></li>
                 <li><a href="#">Politique de confidentialité</a></li>
                 <li><a href="#">Conditions d'utilisation</a></li>
-                <p>© 2021 - WCS Marie-Laure, Kilian et Maxime</p>
+                <p>© 2021 - WCS Kilian et Maxime</p>
             </ul>
         </footer>
     </div>

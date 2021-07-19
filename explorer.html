@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue à Corte</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mulish:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div id="main">
+    
+    <!-- Barre de navigation -->
+        <nav>
+            <div id="logo">
+                <img src="Images/logo.png" alt="Logo ville de Corte">
+            </div>
+
+            <div id="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="adresses.html">Adresses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <div id="explorerContainer">
+            <h1>Lieux à visiter</h1>
+                <h2 id="titleTerre">Côté Terre</h2>
+            <hr>
+
+            <div id="terre">
+                
+                <div id="leftOne">
+                    <div class="imgBlockOne">
+                        <img id="one" class="img" src="Images/archeP.JPG" alt="archeP">
+                            <div class="textBlockOne">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem ipsum esse repellendus quae quos iure excepturi tempore obcaecati earum corrupti quis praesentium animi delectus, odio illo, ipsa eos architecto. Cum sed ad beatae alias inventore recusandae labore consequuntur, architecto repellat qui modi commodi dolorum impedit suscipit, quia, accusantium sequi expedita dicta.</p>
+                            </div>
+                    </div>
+                        <div class="titleBlockOne">
+                            <h3>L'arche de Corte</h3>
+                        </div>
+                </div>
+                <hr>
+                <div id="leftTwo">
+                    <div class="imgBlockTwo">
+                        <img id="two" class="img" src="Images/lacNino.jpg" alt="lacNino">
+                            <div class="textBlockTwo">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur dicta consectetur nesciunt amet sint ratione alias magnam corrupti est, incidunt enim beatae corporis accusamus suscipit repudiandae dolore! Magni, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed ad beatae alias inventore recusandae labore consequuntur, architecto repellat qui modi commodi dolorum impedit suscipit, quia, accusantium sequi expedita dicta.</p>
+                            </div>
+                    </div>
+                        <div class="titleBlockTwo">
+                            <h3>Le Lac de Nino</h3>
+                        </div>
+                </div>
+                <hr>
+                <div id="rightOne">
+                    <div class="imgBlockOne">
+                        <img id="three" class="img" src="Images/restonica.jpg" alt="restonica">
+                            <div class="textBlockOne">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed ad beatae alias inventore recusandae labore consequuntur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci incidunt laborum aperiam debitis. Labore, non cupiditate in beatae sequi, corporis ad provident dicta ipsum quia deleniti fuga sunt, minus neque. architecto repellat qui modi commodi dolorum impedit suscipit, quia, accusantium sequi expedita dicta.</p>
+                            </div>
+                    </div>
+                        <div class="titleBlockOne">
+                            <h3>La Vallée de la Restonica</h3>
+                        </div>
+                </div>
+                <hr>
+                <div id="rightTwo">
+                    <div class="imgBlockTwo">
+                        <img id="four" class="img" src="Images/monteCinto.jpg" alt="monteCinto">
+                            <div class="textBlockTwo">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed ad beatae alias inventore recusandae labore consequuntur, architecto repellat qui modi commodi dolorum impedit suscipit, quia, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam enim illum, veniam ipsum numquam aliquam error ab voluptates nulla iure eaque sed quos libero, voluptate optio delectus totam aperiam excepturi. accusantium sequi expedita dicta.</p>
+                            </div>
+                    </div>
+                        <div class="titleBlockTwo">
+                            <h3>Le Monte Cinto</h3>
+                        </div>              
+                </div>
+                <hr>
+            <!-- Modal Images -->
+
+                <div id="myModal" class="modal">
+                    <span class="close">x</span>
+                    <img class="modalImg" id="img1">
+                    <div id="modalCaption"></div>
+                </div>
+                
+            </div>
+
+            <div id="mer">
+                <h2 id="titleMer">Côté Mer</h2>
+                
+            <!-- Slider container -->
+                <div class="slideContainer">
+                    
+                    <div class="slideImg fade">
+                        <div class="numbertext">1 / 4</div>
+                            <img class="img" src="Images/calanquesPiana.jpg" style="width:100%">
+                                <div class="text">Calanques De Piana</div>
+                    </div>
+                  
+                    <div class="slideImg fade">
+                        <div class="numbertext">2 / 4</div>
+                            <img class="img" src="Images/plageArgent.jpg" style="width:100%">
+                                <div class="text">La Plage d'Argent</div>
+                    </div>
+                  
+                    <div class="slideImg fade">
+                        <div class="numbertext">3 / 4</div>
+                            <img class="img" src="Images/saleccia.jpg" style="width:100%">
+                                <div class="text">La Plage de Saleccia</div>
+                    </div>
+
+                    <div class="slideImg fade">
+                        <div class="numbertext">4 / 4</div>
+                            <img class="img" src="Images/santaGiulia.jpg" style="width:100%">
+
+                                <div class="text">Santa Giulia</div>
+                    </div>
+                  
+                <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+
+                  <br>
+                  
+                <!-- The dots bottom images -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+            </div>
+        </div>
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    <!-- Footer -->        
+        <footer>
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Politique en matière de cookies</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <p>© 2021 - WCS Marie-Laure, Kilian et Maxime</p>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Js Page ADDED -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
