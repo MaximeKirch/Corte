@@ -1,4 +1,9 @@
 # G1-siteCorte
+19/07/2021
+
+- Ajout d'un formulaire responsive sur la page contact
+- Mise à jour du responsive sur toutes les pages
+-------------------------------------------------------
 10/07/2021
 
 - Fix des bugs sur page Index, contact
