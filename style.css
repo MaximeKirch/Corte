@@ -57,7 +57,6 @@ h1 {
     margin-top: 30px;
     color: rgb(255,255,255);
     font-family: 'Buda', cursive;
-
 }
 
 h2 {
@@ -78,15 +77,12 @@ nav {
     background-color: rgb(51, 51, 51);
     color: white;
     height: 80px;
-    padding-bottom: 10px;
-    
+    padding-bottom: 10px; 
 }
 
 #menu {
     width: auto;
-    justify-self: flex-end;
-   
-    
+    justify-self: flex-end;  
 }
 
 #logo {
@@ -140,19 +136,27 @@ footer {
 footer p {
     color:rgb(238, 240, 241);
     font-size: 12px;
+    padding-top: 10px;
 }
 
 footer li {
     font-size: 12px;
 }
 
+#menuResponsive{
+    display: none;
+}
+
+#burger{
+    display: none;
+}
+
+
 
 
 /* --------------------------------------------------------------------------------------------- */
 
     /* 2. INDEX */
-
-
 
 /* a. Hero banner */
 
@@ -200,7 +204,7 @@ footer li {
     font-size: 20px;
 }
 
-.presentation {
+.presentationHome {
     display: flex;
     justify-content: space-around;
 }
@@ -211,10 +215,9 @@ footer li {
    text-align: justify;
    font-size: 17px;
    margin-top: 50px;
-   
-   
-   
 }
+
+
 
 #local {
     width: 100%;
@@ -225,33 +228,51 @@ footer li {
     font-size: 17px;
 }
 
+#etudier {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
 .titreHistoireG {
     padding-left: 10px;
-    display: flex;
+    padding-top: 10px;
+    text-align: center;
     height: 35px;
-    align-items: center;
     text-transform: uppercase;
 }
 
 .titreHistoireD {
     padding-left: 10px;
     height: 35px;
-    display: flex;
-    align-items: center;
+    text-align: center;
+    padding-top: 10px;
     text-transform: uppercase;
+    text-align: center  ; 
+}
 
+.titreEtudier{
+    padding-left: 10px;
+    height: 35px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    padding-top: 10px;
 }
 
 .paragrapheHistoire {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    
 }
 
 /* Timeline Twitter */
 .timelineTitle{
     border-bottom: 1px solid black;
-    text-align: center  ;    
+    text-align: center;    
 }
 
 #timeline{
@@ -273,48 +294,13 @@ footer li {
 }
 
 
-
-
 /* ------------------------------------------------------------------------------------------------*/
 
-/* 2. ADRESSES */
+    /* 2. Explorer */
 
-    /* a. Container */
+    /* ---- TERRE ---- */
 
-    #container {
-        display: flex;
-        width: auto;
-        flex-direction: column;
-       
-    }
-
-    .restaurant {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 40px;
-    }
-
-    .restaurant h2 {
-        margin-bottom: 10px;
-    }
-
-    .restaurant p {
-        padding: 0px 30px;
-        margin-top: 10px;
-    }
-
-    .imgRestaurant {
-        margin-top: 30px;
-        width: auto;
-        height: auto;
-    }
-
-    /* ------------------------------------------------------------------------------------------------*/
-
-    /* 4. Explorer */
-
-    /* -- --- TERRE -- --- */
+    /* a. General */
 
     #explorerContainer h1{
         color: black;
@@ -327,7 +313,7 @@ footer li {
         font-family: 'Buda', cursive;
     }
 
-    #titleTerre{
+    .titlePage{
         color: grey;
         text-align: center;
         margin-top: 30px;
@@ -381,8 +367,6 @@ footer li {
         display: flex;
         flex-direction: row;
         align-items: center;
-        
-
     }
 
     .textBlockOne{
@@ -394,7 +378,6 @@ footer li {
         margin: 50px;
         text-align: justify;
     }
-
 
 
     /* Animations */
@@ -413,8 +396,7 @@ footer li {
 
     .titleBlockOne, .titleBlockTwo, .titleBlockThree, .titleBlockFour {
         overflow: hidden;
-        animation: fadeinTitle 4s;
-        
+        animation: fadeinTitle 4s;  
     }
 
     #explorerContainer h1,h2 {
@@ -422,7 +404,6 @@ footer li {
         overflow: hidden;
         animation: slide 2s ease forwards;
         font-family: 'Buda', cursive;
-
     }
 
     @keyframes slide {
@@ -460,7 +441,6 @@ footer li {
     }
     
     
-
     /* Images responsive */
 
     #one,#two, #three, #four{
@@ -477,6 +457,7 @@ footer li {
     #two, #four{
         box-shadow: -3px 3px 3px rgb(54, 54, 54);
     }
+
 
     /* Blocs titre sur images */
 
@@ -528,7 +509,8 @@ footer li {
         padding: 20px;
     }
 
-    /* -- Modal Images -- */
+
+    /* b. Modal Images */
 
     /* Modal display style */
 
@@ -562,7 +544,7 @@ footer li {
         color: #ccc;
         padding: 10px 0;
         height: 150px;
-      }
+    }
 
     /* Button close style */
 
@@ -583,7 +565,8 @@ footer li {
         cursor: pointer;
     }
       
-    /* Animation zoom */
+
+    /* c. Animations */
       
     .modalImg, #modalCaption {
         animation-name: zoom;
@@ -595,11 +578,10 @@ footer li {
         to{transform: scale(1);}
     }
 
-    
 
-    /* -- Slider Plages -- */
+    /* ---- MER ---- */
 
-
+    /* a. Slider Plages */
 
     #titleMer{
         margin-top: 10px;
@@ -652,7 +634,7 @@ footer li {
 
     /* Style number text + caption text */
 
-    .text {
+    .textPlage {
         color: white;
         opacity: 1;
         font-weight: 900;
@@ -702,7 +684,7 @@ footer li {
         font-size: 17px;
     }
 
-    /* Animation fading img  */
+    /* b. Animation fading img  */
 
     .fade {
         -webkit-animation-name: fade;
@@ -774,76 +756,156 @@ footer li {
     }
   
 
-/* -------------------------------------------*/
+/* ---------------------------------------------------------------------------------*/
 
-/* 5. Contact */
+    /* 3. DECOUVREZ */
 
-    /* a. Formulaire */
+    /* a. General */
 
-  form {
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-  }
-  
-  form div + div {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  
-  input, textarea {
-    /* Pour s'assurer que tous les champs texte ont la même police.
-       Par défaut, les textarea ont une police monospace */
-    font: 1em sans-serif;
-  
-    /* Pour que tous les champs texte aient la même dimension */
-    width: 300px;
-    box-sizing: border-box;
-  
-    /* Pour harmoniser le look & feel des bordures des champs texte */
-    border: 1px solid #999;
-  }
-  
-  input:focus, textarea:focus {
-    /* Pour souligner légèrement les éléments actifs */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
-    vertical-align: top;
-  
-    /* Pour donner assez de place pour écrire du texte */
-    height: 5em;
-  }
-  
-  .button {
-    /* Pour placer le bouton à la même position que les champs texte */
-    padding-left: 90px; /* même taille que les étiquettes */
-  }
-  
-  button {
-    /* Cette marge supplémentaire représente grosso modo le même espace que celui
-       entre les étiquettes et les champs texte */
-    margin-left: .5em;
-  }
 
-    /* b. Map */
+.title h1 {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    height: 0;
+    overflow: hidden;
+    animation: slide 2s ease forwards;
+    font-family: 'Buda', cursive;
+}
+
+
+.title h2{
+    color: grey;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    animation: slide 2s ease forwards;
+    font-family: 'Buda', cursive;
+}
+
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    animation: fadein 4s, slideLeft 4s ease;
+}
+
+.info h3 {
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 32px;
+    font-family: 'Buda', cursive;
+}
+
+.info p {
+    font-size: 24px;
+    margin-top: 5px;
+    font-family: 'Buda', cursive;
+}
+
+
+/* b. Overlay */
+
+.presentation {
+    position: relative;
+    width: 50%;
+    margin: 10px;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.presentation p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    animation: fadeinTitle 3s; 
+}
+
+.image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.overlay {
+    display: flex;
+    position: absolute; 
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(60, 60, 60, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    justify-content: center;
+    align-items:center;
+}
+
+.text {
+    font-family: 'Buda', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color:rgb(190, 190, 190);
+    justify-content: center;
+    align-content: center;
+}
+
+.presentation:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+
+/* ---------------------------------------------- */
+
+    /*  4. Contact */
+
+    /* a. Map */
+
+
+
+#localisation {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#adresse{
+    /* animation: fadein 4s, slideLeft 4s ease; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h2 p {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    height: 0;
+    overflow: hidden;
+    animation: slide 2s ease forwards;
+    font-family: 'Buda', cursive;
+}
 
   .card h2{
     order:-1;
     text-align:center;
-  }
-
-  section {
-      display:flex;
-      flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .card {
@@ -851,5 +913,357 @@ footer li {
     flex:1;
     flex-direction:column;
     justify-content:space-around;
-  }
+  } 
 
+    /* b. Formulaire */
+
+    .responsiveForm {
+        display: none;
+    }
+
+    .formulaire {
+       margin-bottom: 50px;
+       height: auto;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+ 
+
+    .formulaire h2 {
+        color: grey;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        animation: slide 2s ease forwards;
+        font-family: 'Buda', cursive;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 40% auto;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #inputText, #inputEmail {
+        width: 50%;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        background-color: rgba(50, 50, 50, 0.7);
+        color:rgb(238, 240, 241);
+        font-family: 'Buda', cursive;
+        border-radius: 2px;
+    }
+
+    #inputMessage {
+        margin-top: 30px;
+        width: 70%;
+        background-color: rgba(50, 50, 50, 0.7);
+        color: rgb(238, 240, 241);
+        font-family: 'Buda', cursive;
+        border-radius: 2px;
+    }
+
+    #contactForm {
+        background-image: url(Images/backgroundForm.jpeg);
+        background-repeat:round;
+        border-radius: 3px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 600px;
+        margin: 0px 20px;
+    }
+
+    #submitBtn {
+        cursor: pointer;
+        margin-top: 20px;
+        height: 60px;
+        width: 20%;
+        opacity: 0.8;
+        border-radius: 8px;
+        background-color: rgb(151, 116, 10);
+        border: 1px solid black;
+        color: rgb(238, 240, 241);
+        font-size: 32px;
+        font-family: 'Buda', cursive;
+    }
+
+    
+
+
+ /* -------------------------------------------*/
+
+    /* 5. RESPONSIVE */
+
+    /* a. General */
+
+    @media only screen and (max-width: 1024px) {
+        /* Cacher le menu gÃ©nÃ©ral en responsive */
+
+        #menu {
+            display: none;
+        }
+
+        .topnav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        } 
+
+        #logo {
+            display:flex;
+            align-content: center;
+        }
+
+        #menuResponsive {
+            display: block;
+            position: absolute;
+            justify-content: center;
+            background-color: rgba(50, 50, 50, 0.7);
+            right: 0;
+            top: 0;
+            margin: 0;
+            width: 100%;
+            height: 200px;
+            z-index: 99;
+            transform-origin: 0% 0%;
+            transform: translate(200%, 0);
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        }
+
+        #menuResponsive.open {
+            transform: none;
+            position: fixed;
+            width: 100%;
+            height: auto;
+        }
+
+        #menuResponsive a {
+            font-size: 24px;
+            font-family: 'Mulish', arial, sans-serif;
+            font-weight: 100;
+        }
+
+        #menuResponsive ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color:rgba(50, 50, 50, 0.9);
+            
+            position: absolute;
+            margin:0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            min-width: 200px;
+            height: auto;
+        }
+
+        #menuResponsive li {
+            background-color: rgba(50, 50, 50, 0.1);
+            width: 100%;
+            margin-bottom: 10px;
+        
+        }
+
+        #burger {
+            
+            display: flex;
+            align-items: center;
+            margin: 16px;
+            width: 33px;
+            height: 28px;
+            z-index: 99;
+            user-select: none;
+            cursor: pointer;
+        }
+
+
+        #homeLink {
+            display: block;
+            font-size: 24px;
+        }
+
+        
+
+         #main {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        footer {
+            display: none;
+        }
+
+        #footerResponsive {
+            display: flex;
+            max-height: 60px;
+            width: 100%;
+     
+           justify-content: space-between;
+           align-content: flex-end;
+           position: absolute;
+           bottom: 0;
+       
+        }
+
+        #footerResponsive > ul {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+
+    
+        
+
+       
+       
+    }
+
+
+    /* b. Index */ 
+
+    @media only screen and (max-width: 1024px) {
+        
+    
+
+    .hero {
+        width: auto;
+        
+    }
+
+    
+
+    
+
+    #welcome {
+        display: none;
+        width: auto;
+        height: auto;
+        position: fixed;
+        justify-self: center;
+    }
+
+    .histoire {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       
+    }
+
+        #general {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        #local {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+    }
+
+
+    /* c. DÃ©couvrez */
+
+    @media only screen and (max-width: 1024px) {
+        
+    }
+
+    .info {
+        margin-left: 20px;
+    }
+
+    /* Contact */ 
+
+    @media only screen and (max-width: 1024px) {
+
+    #map {
+        display: flex;
+        width: 80%;
+        justify-self: center;
+    }
+
+    #contactForm {
+        display: flex;
+        width: auto;
+        justify-self: center;
+    }
+
+    @media only screen and (max-width: 376px) {
+
+        .formulaire {
+            display: none;
+           position: center;
+        }
+
+        #responsiveFormTitle {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color:rgb(250, 104, 87);
+        }
+
+        .responsiveForm {
+            display: center;
+            background-color: rgba(50, 50, 50, 0.7);
+            margin-bottom: 20px;
+        }
+
+        #responsiveText {
+            height: 30px;
+            width: 80%;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            text-align: center;
+            font-family: 'Mulish', Arial, Helvetica, sans-serif;
+
+        }
+
+        #responsiveEmail {
+            height: 30px;
+            width: 80%;
+            margin-bottom: 5px;
+            text-align: center;
+            font-family: 'Mulish', Arial, Helvetica, sans-serif;
+        }
+
+        #responsiveArea {
+            width: 80%;
+            height: 200px;
+            margin-bottom: 10px;
+            font-family: 'Mulish', Arial, Helvetica, sans-serif;
+        }
+
+        #responsiveSubmitBtn {
+            display: flex;
+            height: 50px;
+            width: 50%;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            color:rgb(250, 104, 87);
+            
+            justify-content: center;
+            align-content: center;
+            font-size: 28px;
+            font-family: 'Mulish', arial, sans-serif;
+            font-weight: 700;
+        }
+
+        #responsiveSubmitBtn:active {
+            background-color: rgb(250, 104, 87);
+            color: rgba(206, 196, 168, 0.9)
+        }
+    }
+    }

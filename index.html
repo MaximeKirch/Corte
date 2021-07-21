@@ -17,20 +17,37 @@
     <div id="main">
     
     <!-- Barre de navigation -->
-        <nav>
-            <div id="logo">
-                <img src="Images/logo.png" alt="Logo ville de Corte">
-            </div>
 
-            <div id="menu">
+    <nav class="topnav">
+        <div id="logo">
+            <a href="index.html"><img src="Images/logo.png" alt="Logo ville de Corte"></a>
+        </div>
+            <h1 id="burger">☰</h1> 
+
+    <!-- Menu Standard-->
+        
+        <div id="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="explorer.html">Explorer</a></li>
+            <li><a href="decouvrez.html">Découvrez</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Responsive Menu -->
+       
+        <nav role="navigation" id="menuResponsive">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="explorer.html">Explorer</a></li>
-                <li><a href="adresses.html">Adresses</a></li>
+                <li><a href="decouvrez.html">Découvrez</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="closeMenu">X</a></li>
             </ul>
-            </div>
         </nav>
+    </nav>
+
 
     <!-- Image (carousel) de page d'accueil -->
 
@@ -41,7 +58,7 @@
 
     <!-- Menu flexboxs histoire & histoire locale -->
         
-        <div class="presentation">
+        <div class="presentationHome">
             <div class="histoire">
 
                 <div id="general">
@@ -58,14 +75,20 @@
                         Située au point de croisement entre les vallées de la Restonica et du Tavignanu, Corte est le chef-lieu de la randonnée. <br><br>
                         Que vous soyez amateurs de monts (Monte Cinto, Monte Rotondu, Monte Cardu...) ou de lacs (Melu, Capitellu, Goria, Oriente, Ninu...), ou simplement venus pour profiter de cadres idylliques, nous ne saurons que vous conseiller de venir y séjourner !</p>
                 </div>
+            
+                
+                <div id="etudier">
+                <h2 class="titreEtudier">Etudier à Corte</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jrsLkTSsPqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
             </div>
 
             <div id="timeline">
-                <h2>Follow Us on Twitter</h2>
+                <h2>Suivez nous sur Twitter</h2>
                 <a href="https://twitter.com/villecorti?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @villecorti</a>
-                <a class="twitter-timeline" data-width="400" data-height="550" data-chrome="noheader, nofooter, transparent, noscrollbar" href="https://twitter.com/VilleCorti?ref_src=twsrc%5Etfw">Tweets by VilleCorti</a>
-                
-
+                <a class="twitter-timeline" data-width="400" data-height="955" data-chrome="noheader, nofooter, transparent, noscrollbar" href="https://twitter.com/VilleCorti?ref_src=twsrc%5Etfw">Tweets by VilleCorti</a>
             </div>
         </div>
     
@@ -77,11 +100,15 @@
                 <li><a href="#">Politique en matière de cookies</a></li>
                 <li><a href="#">Politique de confidentialité</a></li>
                 <li><a href="#">Conditions d'utilisation</a></li>
-                <p>© 2021 - WCS Marie-Laure, Kilian et Maxime</p>
+                <p>© 2021 - WCS Kilian et Maxime</p>
             </ul>
         </footer>
     </div>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    </body>
+<!-- JS Scripts -->
+
+    <script type="text/javascript" src="script.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+</body>
 </html>

@@ -17,189 +17,197 @@
     <div id="main">
     
     <!-- Barre de navigation -->
-        <nav>
-            <div id="logo">
-                <img src="Images/logo.png" alt="Logo ville de Corte">
-            </div>
 
-            <div id="menu">
+    <nav class="topnav">
+        <div id="logo">
+            <a href="index.html"><img src="Images/logo.png" alt="Logo ville de Corte"></a>
+        </div>
+            <h1 id="burger">☰</h1> 
+
+    <!-- Menu Standard-->
+        
+        <div id="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="explorer.html">Explorer</a></li>
+            <li><a href="decouvrez.html">Découvrez</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Responsive Menu -->
+       
+        <nav role="navigation" id="menuResponsive">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="explorer.html">Explorer</a></li>
-                <li><a href="adresses.html">Adresses</a></li>
+                <li><a href="decouvrez.html">Découvrez</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="closeMenu">X</a></li>
             </ul>
-            </div>
         </nav>
+    </nav>
 
-        <div id="explorerContainer">
-            <h1>Lieux à visiter</h1>
-                <h2 id="titleTerre">Côté Terre</h2>
-            <hr>
+    <!-- Explorer container -->
+
+    <div id="explorerContainer">
+        <h1>Lieux à visiter</h1>
+            <h2 class="titlePage">Côté Terre</h2>
+        <hr>
 
     <!-- COTE TERRE -->
 
-            <div id="terre">
+        <div id="terre">
                 
-                <div id="leftOne">
-                    <div class="imgBlockOne">
-                        <img id="one" class="img" src="Images/archeP.JPG" alt="archeP">
-                            <div class="titleBlockOne">
-                                <h3>L'arche de Corte</h3>
-                            </div>
+            <div id="leftOne">
+                <div class="imgBlockOne">
+                    <img id="one" class="img" src="Images/archeP.JPG" alt="archeP">
+                        <div class="titleBlockOne">
+                            <h3>L'arche de Corte</h3>
+                        </div>
                             
-                            <div class="textBlockOne">
-                                <p>L’arche de Corte, arche de Padule ou arcu di Scandulaghja, est une arche naturelle granitique situé à 1 500 mètres d'altitude, au-dessus de Corte, surplombant la vallée du Tavignano.</p><br>
-                                <p>Difficulté : Randonnée difficile. Montée assez rude au départ, la 1ère partie est sans ombre ! La randonnée demande une très bonne forme physique, encore plus s’il fait chaud… Pensez à l’eau ! et partir tôt le matin.</p><br>
-                                <p>Durée : 5h aller et retour (montée jusqu’à l’arche et descente par le même chemin).</p><br>
-                                <p>Départ : le parking résidence Saint-Joseph (contrebas de la citadelle).</p>
-                            </div>
-                    </div>
+                        <div class="textBlockOne">
+                            <p>L’arche de Corte, arche de Padule ou arcu di Scandulaghja, est une arche naturelle granitique situé à 1 500 mètres d'altitude, au-dessus de Corte, surplombant la vallée du Tavignano.</p><br>
+                            <p>Difficulté : Randonnée difficile. Montée assez rude au départ, la 1ère partie est sans ombre ! La randonnée demande une très bonne forme physique, encore plus s’il fait chaud… Pensez à l’eau ! et partir tôt le matin.</p><br>
+                            <p>Durée : 5h aller et retour (montée jusqu’à l’arche et descente par le même chemin).</p><br>
+                            <p>Départ : le parking résidence Saint-Joseph (contrebas de la citadelle).</p>
+                        </div>
+                </div>
                         
-                </div>
-                <hr>
-                <div id="leftTwo">
-                    <div class="imgBlockTwo">
-                        <img id="two" class="img" src="Images/lacNino.jpg" alt="lacNino">
-                            <div class="textBlockTwo">
-                                <p>Le lac de Nino, source du Tavignano, est situé sur le plateau du Camputile. Il est entouré de pozzines, sortes de petits lacs tourbeux.</p><br>
-                                <p>Difficulté : La côte est assez raide en fin de parcours, mais la forêt de pins laricios du Valdu Niellu et la vue magnifique sur la Paglia Orba et le Massif du Cinto nous font vite oublier cette montée.</p><br>
-                                <p>Durée : 4h30 aller-retour.</p><br>
-                                <p>Départ : La maison forestière de Poppaghia (1076 m). A 10 km en dessous du col de Vergio en direction de Calacuccia.</p>
-                            </div>
-                    </div>
-                        <div class="titleBlockTwo">
-                            <h3>Le Lac de Nino</h3>
-                        </div>
-                </div>
-                <hr>
-                <div id="rightOne" class="left">
-                    <div class="imgBlockOne">
-                        <img id="three" class="img" src="Images/restonica.jpg" alt="restonica">
-                            <div class="textBlockOne">
-                                <p>Au départ de Corte, au cœur de la Corse, les gorges de la Restonica offrent de multiples possibilités de baignades et de randonnées. Une route sinueuse permet d'atteindre les bergeries de Grotelle qui sont le départ vers les lacs de Melo et Capitello.</p><br>
-                                <p>La Vallée de la Restonica n’abrite pas moins de 7 lacs d’altitude ! Les plus connus sont le Lac de Melo (1711 m) et le Lac de Capitello (1930 m).</p><br>
-                                <p>Melo, en forme de pomme  (« mela » en corse), est profond d’une vingtaine de mètres et repose sur 6,5 hectares.</p><br>
-                                <p>Situé quelques centaines de mètres plus haut, le Capitello, avec ses 5,5 hectares de superficie, atteint quant à lui 42 mètres de profondeur.</p>
-                            </div>
-                    </div>
-                        <div class="titleBlockThree">
-                            <h3>La Vallée de la Restonica</h3>
-                        </div>
-                </div>
-                <hr>
-                <div id="rightTwo" class="right">
-                    <div class="imgBlockTwo">
-                        <img id="four" class="img" src="Images/monteCinto.jpg" alt="monteCinto">
-                            <div class="textBlockTwo">
-                                <p>Le Monte Cinto est le plus haut sommet de Corse et culmine à 2 706 m. Il est le point culminant du massif du même nom, dans le nord-ouest de l'île.</p><br>
-                                <p>Difficulté : Le dénivelé, l'altitude et le caractère très accidenté des montagnes en Corse du Nord donne un caractère difficile à cette randonnée. Rappelons que vous vous déplacez en Haute Montagne, alors assurez-vous que les conditions météorologiques soient parfaites avant de partir. N'hésitez pas à vous renseigner auprès des professionnels de la montagne travaillant à Asco .</p><br>
-                                <p>Durée : Environ 12h aller-retour.</p><br>
-                                <p>Départ : La randonnée pour accéder au Monte Cinto peut se faire par le versant Nord. Balisé puis la station d'Asco, cette balade fait environ 12km (aller retour).</p>
-                            </div>
-                    </div>
-                        <div class="titleBlockFour">
-                            <h3>Le Monte Cinto</h3>
-                        </div>              
-                </div>
-                <hr>
-            <!-- Modal Images -->
-
-                <div id="myModal" class="modal">
-                    <span class="close">x</span>
-                    <img class="modalImg" id="img1">
-                    <div id="modalCaption"></div>
-                </div>
-                
             </div>
+            <hr>
+
+            <div id="leftTwo">
+                <div class="imgBlockTwo">
+                    <img id="two" class="img" src="Images/lacNino.jpg" alt="lacNino">
+                        <div class="textBlockTwo">
+                            <p>Le lac de Nino, source du Tavignano, est situé sur le plateau du Camputile. Il est entouré de pozzines, sortes de petits lacs tourbeux.</p><br>
+                            <p>Difficulté : La côte est assez raide en fin de parcours, mais la forêt de pins laricios du Valdu Niellu et la vue magnifique sur la Paglia Orba et le Massif du Cinto nous font vite oublier cette montée.</p><br>
+                            <p>Durée : 4h30 aller-retour.</p><br>
+                            <p>Départ : La maison forestière de Poppaghia (1076 m). A 10 km en dessous du col de Vergio en direction de Calacuccia.</p>
+                        </div>
+                </div>
+                    <div class="titleBlockTwo">
+                        <h3>Le Lac de Nino</h3>
+                    </div>
+            </div>
+            <hr>
+
+            <div id="rightOne" class="left">
+                <div class="imgBlockOne">
+                    <img id="three" class="img" src="Images/restonica.jpg" alt="restonica">
+                        <div class="textBlockOne">
+                            <p>Au départ de Corte, au cœur de la Corse, les gorges de la Restonica offrent de multiples possibilités de baignades et de randonnées. Une route sinueuse permet d'atteindre les bergeries de Grotelle qui sont le départ vers les lacs de Melo et Capitello.</p><br>
+                            <p>La Vallée de la Restonica n’abrite pas moins de 7 lacs d’altitude ! Les plus connus sont le Lac de Melo (1711 m) et le Lac de Capitello (1930 m).</p><br>
+                            <p>Melo, en forme de pomme  (« mela » en corse), est profond d’une vingtaine de mètres et repose sur 6,5 hectares.</p><br>
+                            <p>Situé quelques centaines de mètres plus haut, le Capitello, avec ses 5,5 hectares de superficie, atteint quant à lui 42 mètres de profondeur.</p>
+                        </div>
+                </div>
+                    <div class="titleBlockThree">
+                        <h3>La Vallée de la Restonica</h3>
+                    </div>
+            </div>
+            <hr>
+
+            <div id="rightTwo" class="right">
+                <div class="imgBlockTwo">
+                    <img id="four" class="img" src="Images/monteCinto.jpg" alt="monteCinto">
+                        <div class="textBlockTwo">
+                            <p>Le Monte Cinto est le plus haut sommet de Corse et culmine à 2 706 m. Il est le point culminant du massif du même nom, dans le nord-ouest de l'île.</p><br>
+                            <p>Difficulté : Le dénivelé, l'altitude et le caractère très accidenté des montagnes en Corse du Nord donne un caractère difficile à cette randonnée. Rappelons que vous vous déplacez en Haute Montagne, alors assurez-vous que les conditions météorologiques soient parfaites avant de partir. N'hésitez pas à vous renseigner auprès des professionnels de la montagne travaillant à Asco .</p><br>
+                            <p>Durée : Environ 12h aller-retour.</p><br>
+                            <p>Départ : La randonnée pour accéder au Monte Cinto peut se faire par le versant Nord. Balisé puis la station d'Asco, cette balade fait environ 12km (aller retour).</p>
+                        </div>
+                </div>
+                    <div class="titleBlockFour">
+                        <h3>Le Monte Cinto</h3>
+                    </div>              
+            </div>
+            <hr>
+
+    <!-- Modal Images -->
+
+            <div id="myModal" class="modal">
+                <span class="close">x</span>
+                <img class="modalImg" id="img1">
+                <div id="modalCaption"></div>
+            </div>
+        </div>
 
     <!-- COTE MER -->
 
-            <div id="mer">
-                <h2 id="titleMer">Côté Mer</h2>
+        <div id="mer">
+            <h2 id="titleMer">Côté Mer</h2>
                 
             <!-- Slider container -->
-                <div class="slideContainer">
+
+            <div class="slideContainer">
                     
-                    <div class="slideImg fade">
-                        <div class="numbertext">1 / 4</div>
-                            <img class="img" src="Images/calanquesPiana.jpg" style="width:100%">
-                                <div class="text"><span>Calanques De Piana</span></div>
-                                <p class="description">Les calanques de Piana sont un incontournable de la Corse. Elles sont situées entre Calvi et Ajaccio, sur la côte Ouest de la Corse. Avec le golfe de Porto, le golfe de Girolata et la réserve de Scandola plus au nord, les calanques de Piana sont inscrites sur la liste du patrimoine mondial, depuis 1983. Elles font partie d’un complexe volcanique situé à près de 300 m au-dessus du niveau de la mer à son altitude la plus élevée, ce qui leur confèrent des paysages composés de roches rougeâtres et de granits roses absolument grandioses.</p>
-                    </div>
+                <div class="slideImg fade">
+                    <div class="numbertext">1 / 4</div>
+                        <img class="img" src="Images/calanquesPiana.jpg" style="width:100%">
+                            <div class="textPlage"><span>Calanques De Piana</span></div>
+                            <p class="description">Les calanques de Piana sont un incontournable de la Corse. Elles sont situées entre Calvi et Ajaccio, sur la côte Ouest de la Corse. Avec le golfe de Porto, le golfe de Girolata et la réserve de Scandola plus au nord, les calanques de Piana sont inscrites sur la liste du patrimoine mondial, depuis 1983. Elles font partie d’un complexe volcanique situé à près de 300 m au-dessus du niveau de la mer à son altitude la plus élevée, ce qui leur confèrent des paysages composés de roches rougeâtres et de granits roses absolument grandioses.</p>
+                </div>
                   
-                    <div class="slideImg fade">
-                        <div class="numbertext">2 / 4</div>
-                            <img class="img" src="Images/plageArgent.jpg" style="width:100%">
-                                <div class="text"><span>La Plage d'Argent</span></div>
+                <div class="slideImg fade">
+                    <div class="numbertext">2 / 4</div>
+                        <img class="img" src="Images/plageArgent.jpg" style="width:100%">
+                            <div class="textPlage"><span>La Plage d'Argent</span></div>
                                 <p class="description">La plage de Mare e Sole ou Plage d’Argent se situe sur la commune de Pietrosella, sur la rive sud du Golfe d’Ajaccio. L’Anse de Verghia à côté est sur la commune de Coti-Chiavari. Elle est bordée d'une forêt de pins et est très agréable.Vous y trouverez des paillotes pour vous restaurer.</p>
-                    </div>
+                </div>
                   
-                    <div class="slideImg fade">
-                        <div class="numbertext">3 / 4</div>
-                            <img class="img" src="Images/saleccia.jpg" style="width:100%">
-                                <div class="text"><span>Plage de Saleccia</span></div>
-                                <p class="description">La plage de Saleccia est une destination phare de la région, considérée comme une des plus belles plages de Corse, elle est très prisée par les plaisanciers et les estivants qui y affluent chaque jour par milliers au coeur de l'été. Tout en longueur, la plage s'étend sur plus d'un km de sable blanc bordé d'une eau turquoise claire qui laisse transparaître les poissons les moins farouches, mais aussi des étoiles de mer plus au large.</p>
-
-                    </div>
-
-                    <div class="slideImg fade">
-                        <div class="numbertext">4 / 4</div>
-                            <img class="img" src="Images/santaGiulia.jpeg" style="width:100%">
-                                <div class="text"><span>Santa Giulia</span></div>
-                                <p class="description">Située à 7kms au sud de Porto-Vecchio, la Baie de Santa Giulia, connue dans le monde entier est un véritable lagon aux eaux turquoises et limpides entourées d’un sable blanc. La vue sur les îles Cerbicales depuis Santa Giulia et les roches granitiques au milieu du maquis donnent un aspect sauvage à cette plage. Cette plage en pente très douce est idéale pour les enfants en bas âge et attire des milliers de visiteurs ! Santa Giulia reste un site incontournable pour le farniente et la détente mais également un endroit privilégié pour la voile et les sports nautiques dans un site enchanteur. La zone humide de l’autre côté du cordon lagunaire est un lieu d’évasion et de découverte de la faune et de la flore de Corse.</p>
-                    </div>
-                
-                  
-                <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+                <div class="slideImg fade">
+                    <div class="numbertext">3 / 4</div>
+                        <img class="img" src="Images/saleccia.jpg" style="width:100%">
+                            <div class="textPlage"><span>Plage de Saleccia</span></div>
+                            <p class="description">La plage de Saleccia est une destination phare de la région, considérée comme une des plus belles plages de Corse, elle est très prisée par les plaisanciers et les estivants qui y affluent chaque jour par milliers au coeur de l'été. Tout en longueur, la plage s'étend sur plus d'un km de sable blanc bordé d'une eau turquoise claire qui laisse transparaître les poissons les moins farouches, mais aussi des étoiles de mer plus au large.</p>
                 </div>
 
-                  <br>
+                <div class="slideImg fade">
+                    <div class="numbertext">4 / 4</div>
+                        <img class="img" src="Images/santaGiulia.jpeg" style="width:100%">
+                            <div class="textPlage"><span>Santa Giulia</span></div>
+                            <p class="description">Située à 7kms au sud de Porto-Vecchio, la Baie de Santa Giulia, connue dans le monde entier est un véritable lagon aux eaux turquoises et limpides entourées d’un sable blanc. La vue sur les îles Cerbicales depuis Santa Giulia et les roches granitiques au milieu du maquis donnent un aspect sauvage à cette plage. Cette plage en pente très douce est idéale pour les enfants en bas âge et attire des milliers de visiteurs ! Santa Giulia reste un site incontournable pour le farniente et la détente mais également un endroit privilégié pour la voile et les sports nautiques dans un site enchanteur. La zone humide de l’autre côté du cordon lagunaire est un lieu d’évasion et de découverte de la faune et de la flore de Corse.</p>
+                </div>
+                
                   
-                <!-- The dots bottom images -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
+            <!-- Next and previous buttons -->
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+                <br>
+                  
+            <!-- The dots bottom images -->
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
             </div>
         </div>
-    
-        
-    
+            
+    <!-- Footer --> 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-    <!-- Footer -->        
         <footer>
             <ul>
                 <li><a href="#">Mentions légales</a></li>
                 <li><a href="#">Politique en matière de cookies</a></li>
                 <li><a href="#">Politique de confidentialité</a></li>
                 <li><a href="#">Conditions d'utilisation</a></li>
-                <p>© 2021 - WCS Marie-Laure, Kilian et Maxime</p>
+                <p>© 2021 - WCS Kilian et Maxime</p>
             </ul>
         </footer>
     </div>
 
-    <!-- Js Page ADDED -->
-<script type="text/javascript" src="script.js"></script>
+    <!-- JS Scripts -->
+    
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
