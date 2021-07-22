@@ -34,6 +34,7 @@
 /* a. General */
 
 @import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
 * {
     margin: 0;
@@ -78,6 +79,7 @@ nav {
     color: white;
     height: 80px;
     padding-bottom: 10px; 
+    font-size: 20px;
 }
 
 #menu {
@@ -100,6 +102,15 @@ ul {
 }
 
 li {
+    list-style: none;
+    margin: 0px 10px;
+    border-right: 1px solid white;
+    padding-right: 15px;
+    font-family: 'Josefin Slab', serif;
+    margin-top: 10px;
+}
+
+#menu li, #menuResponsive li{
     list-style: none;
     margin: 0px 10px;
     border-right: 1px solid white;
@@ -131,6 +142,7 @@ footer {
     position:relative;
     height:2.5rem;
     width:100%;
+    font-family: 'Josefin Slab', serif;
 }
 
 footer p {
@@ -354,6 +366,8 @@ footer li {
         position: relative;
         margin-left: 40px;
     }
+
+
 
     /* Blocs textes présentation images */
 
@@ -1135,6 +1149,10 @@ footer li {
         width: auto;        
     }
 
+    .histoire {
+        width: 90%;
+    }
+
     .video iframe{
         width: 100%;
         height: 100%;
@@ -1244,7 +1262,7 @@ footer li {
         font-size: 32px;
         font-family: 'Buda', cursive;
     }
-    }   
+    
 
     @media only screen and (max-width: 376px) {
 
@@ -1311,5 +1329,6 @@ footer li {
             color: rgba(206, 196, 168, 0.9)
         }
     }
+}
 }
 }
