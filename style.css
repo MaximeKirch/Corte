@@ -9,32 +9,36 @@
 2. INDEX
     a. Hero Banner
     b. Body Flexboxs
+    c. Timeline Twitter
    
 
-3. ADRESSES
-    a. Container 
+3. EXPLORER
+-- TERRE --
+    a. General
+    b. Container Flexbox 
+    c. Animations
+    d. Modal Images
 
-4. Terre
+-- Mer -- 
     a. Slider
-    b. Boutons
-    c. Thumbnail (légende)
+    b. Container Style
 
-5. Mer
-    a.
-    b.
+4. DECOUVREZ
+    a. General
+    b. Overlay
 
-6. Contact
-    a. Formulaire
-    b. Map
+5. Contact
+    a. Map
+    b. Form
 
-    -------------------------------------------------------------------------------------------------- */
-    
-       /* 1. GENERAL */ 
+ /* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------- 1. GENERAL --------------------------------------------------------------- */ 
 
 /* a. General */
 
 @import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -165,10 +169,8 @@ footer li {
 
 
 
-
-/* --------------------------------------------------------------------------------------------- */
-
-    /* 2. INDEX */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------- 2. INDEX --------------------------------------------------------------- */
 
 /* a. Hero banner */
 
@@ -229,8 +231,6 @@ footer li {
    margin-top: 50px;
 }
 
-
-
 #local {
     width: 100%;
     margin-top: 40px;
@@ -245,9 +245,6 @@ footer li {
     flex-direction: column;
     text-align: center;
 }
-
-
-
 
 .titreHistoireG {
     padding-left: 10px;
@@ -276,14 +273,25 @@ footer li {
     padding-top: 10px;
 }
 
+.video iframe { 
+    left:0; 
+    top:0; 
+    height:350px; 
+    width:100%;
+}
+
+.video {
+    padding: 0px 10px;
+}
+
 .paragrapheHistoire {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    
 }
 
-/* Timeline Twitter */
+/* c. Timeline Twitter */
+
 .timelineTitle{
     border-bottom: 1px solid black;
     text-align: center;    
@@ -307,478 +315,388 @@ footer li {
     padding-bottom: 10px;
 }
 
+#responsiveTimeline{
+    display: none;
+}
 
-/* ------------------------------------------------------------------------------------------------*/
 
-    /* 2. Explorer */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------------------- 3. Explorer ------------------------------------------------------------- */
 
-    /* ---- TERRE ---- */
+/* ---- TERRE ---- */
 
-    /* a. General */
+/* a. General */
 
-    #explorerContainer h1{
-        color: black;
-        text-align: center;
-        margin-top: 50px;
-        text-transform: uppercase;
-    }
+#explorerContainer h1{
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
 
-    #explorerContainer h2, h3, p {
-        font-family: 'Buda', cursive;
-    }
+#explorerContainer h2, h3, p {
+    font-family: 'Buda', cursive;
+}
 
-    .titlePage{
-        color: grey;
-        text-align: center;
-        margin-top: 30px;
-    }
+.titlePage{
+    color: grey;
+    text-align: center;
+    margin-top: 30px;
+}
 
-    hr{
-        margin: 40px;
-    }
+hr{
+    margin: 40px;
+}
 
-    img{
-        cursor: pointer;
-        transition: 0.3s;
-    }
+img{
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-    img:hover{
-        opacity: 0.8;
-    }
+img:hover{
+    opacity: 0.8;
+}
     
-    /* Disposition des images style ZigZag avec flexbox */
+/* b. Container Flexbox  */
 
-    #terre{
-        display: flex;
-        flex-direction: column;
-    }
+#terre{
+    display: flex;
+    flex-direction: column;
+}
 
-    #rightOne, #leftOne{
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        margin-right: 40px;
-    }
+#rightOne, #leftOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
 
-    #rightTwo, #leftTwo{
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-        margin-left: 40px;
-    }
+#rightTwo, #leftTwo{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 40px;
+}
 
+/* Blocs textes présentation images */
 
+.imgBlockOne{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
 
-    /* Blocs textes présentation images */
+.imgBlockTwo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
 
-    .imgBlockOne{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
+.textBlockOne{
+    margin: 50px;
+    text-align: justify;       
+}
 
-    .imgBlockTwo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+.textBlockOne h3{
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bolder;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
 
-    .textBlockOne{
-        margin: 50px;
-        text-align: justify;       
-    }
+.textBlockTwo{
+    margin: 50px;
+    text-align: justify;
+}
 
-    .textBlockTwo{
-        margin: 50px;
-        text-align: justify;
-    }
+.textBlockTwo h3{
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bolder;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
 
+/* c. Animations */
 
-    /* Animations */
+#terre img{
+    animation: fadein 4s;
+}
 
-    #terre img{
-        animation: fadein 4s;
-    }
-
-    .textBlockOne {
-        animation: fadein 4s, slideRight 2s ease;
-    }
+.textBlockOne {
+    animation: fadein 4s, slideRight 2s ease;
+}
     
-    .textBlockTwo {
-        animation: fadein 4s, slideLeft 2s ease;
-    }
+.textBlockTwo {
+    animation: fadein 4s, slideLeft 2s ease;
+}
 
-    .titleBlockOne, .titleBlockTwo, .titleBlockThree, .titleBlockFour {
-        overflow: hidden;
-        animation: fadeinTitle 4s;  
-    }
+#explorerContainer h1,h2 {
+    height: 0;
+    overflow: hidden;
+    animation: slide 2s ease forwards;
+    font-family: 'Buda', cursive;
+}
 
-    #explorerContainer h1,h2 {
-        height: 0;
-        overflow: hidden;
-        animation: slide 2s ease forwards;
-        font-family: 'Buda', cursive;
-    }
+@keyframes slide {
+    0%{height: 0;}
+    100%{height: 50px;}
+}
 
-    @keyframes slide {
-        0%{height: 0;}
-        100%{height: 50px;}
-    }
+@keyframes fadeinTitle {
+    0% { opacity: 0;}
+    50% {opacity: 0;}
+    100% { opacity: 0.7; }
+}
 
-    @keyframes fadeinTitle {
-        0% { opacity: 0;}
-        50% {opacity: 0;}
-        100% { opacity: 0.7; }
-    }
+@keyframes fadein {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
 
-    @keyframes fadein {
-        0% { opacity: 0;}
-        100% { opacity: 1;}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
     }
+    100% {
+        transform: translateX(0);
+    }
+}
 
-    @keyframes slideRight {
-        0% {
-            transform: translateX(-100%);
-        }
-        100% {
-            transform: translateX(0);
-        }
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
     }
-
-    @keyframes slideLeft {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
+    100% {
+        transform: translateX(0);
+       }
+}
     
-    
-    /* Images responsive */
+/* Images responsive */
 
-    #one,#two, #three, #four{
-        display: block;
-        width: 50%;
-        height: auto;
-        border: 2px solid black;
-        cursor: pointer;
-        position: relative;
-    }
+#one,#two, #three, #four{
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+}
 
-    #one, #three{
-        box-shadow: 3px 3px 3px rgb(54, 54, 54);
-    }
+#one, #three{
+    box-shadow: 3px 3px 3px rgb(54, 54, 54);
+}
 
-    #two, #four{
-        box-shadow: -3px 3px 3px rgb(54, 54, 54);
-    }
-
-
-    /* Blocs titre sur images */
-    
-    .titleBlockOne{
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        border-radius: 2px;
-        opacity: 0.7;
-        background-color: black;
-        text-transform: uppercase;
-        color: white;
-        padding: 20px;
-    }
-
-    .titleBlockTwo{
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        opacity: 0.7;
-        border-radius: 2px;
-        background-color: black;
-        text-transform: uppercase;
-        color: white;
-        padding: 20px;
-    }
-
-    .titleBlockThree{
-        position: absolute;
-        bottom: 20px;
-        left: 715px;
-        opacity: 0.7;
-        border-radius: 2px;
-        background-color: black;
-        text-transform: uppercase;
-        color: white;
-        padding: 20px;
-    }
-
-    .titleBlockFour{
-        position: absolute;
-        bottom: 60px;
-        left: 20px;
-        opacity: 0.7;
-        border-radius: 2px;
-        background-color: black;
-        text-transform: uppercase;
-        color: white;
-        padding: 20px;
-    }
+#two, #four{
+    box-shadow: -3px 3px 3px rgb(54, 54, 54);
+}
 
 
-    /* b. Modal Images */
+/* d. Modal Images */
 
-    /* Modal display style */
+/* Modal display style */
 
-    .modal {
-        display: none; 
-        position: fixed; 
-        z-index: 1; 
-        padding-top: 100px; 
-        left: 0;
-        top: 0;
-        width: 100%; 
-        height: 100%; 
-        overflow: auto; 
-        background-color: rgb(0,0,0); 
-        background-color: rgba(0,0,0,0.9); 
-      }
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
 
-    .modalImg {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 800px;
-    }
+.modalImg {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
 
-    #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-    }
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
 
-    /* Button close style */
+ #modalCaption {
+    display: none;
+}
 
-    .close {
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 30px;
-        transition: 0.3s;
-        cursor: pointer;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+/* Button close style */
 
-    close:hover,.close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
       
+.modalImg, #modalCaption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
 
-    /* c. Animations */
+@keyframes zoom{
+    from {transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+
+/* ---- MER ---- */
+
+/* a. Slider */
+
+#titleMer{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: grey;
+}
+
+#mer img{
+    border: 2px solid black;
+}
+
+.slideContainer{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide img by default */
+
+.slideImg {
+    display: none;
+}
+
+/* Style buttons prev/next + position */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-shadow: 0 0 2px black;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Style number text + caption text */
+
+.textPlage {
+    color: white;
+    opacity: 1;
+    font-weight: 900;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    font-family: 'Buda', cursive;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+}
+
+.numbertext {
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-weight: 900;
+    text-shadow: 0 0 2px black;
+}
+
+/* Buttons below img */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 200px;
+}
+    
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* b. Container Style */
+
+.description {
+    position: absolute;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* b. Animation fading img  */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+    
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
       
-    .modalImg, #modalCaption {
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
 
-    @keyframes zoom{
-        from {transform: scale(0);}
-        to{transform: scale(1);}
-    }
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------- 3. DECOUVREZ------------------------------------------------------------- */
 
-
-    /* ---- MER ---- */
-
-    /* a. Slider Plages */
-
-    #titleMer{
-        margin-top: 10px;
-        margin-bottom: 30px;
-        text-align: center;
-        color: grey;
-    }
-
-    #mer img{
-        border: 2px solid black;
-    }
-
-    .slideContainer{
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-    }
-
-    /* Hide img by default */
-
-    .slideImg {
-        display: none;
-    }
-
-    /* Style buttons prev/next + position */
-
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color:white;
-        font-weight: bold;
-        font-size: 30px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-
-    /* Style number text + caption text */
-
-    .textPlage {
-        color: white;
-        opacity: 1;
-        font-weight: 900;
-        font-size: 25px;
-        text-transform: uppercase;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        font-family: 'Buda', cursive;
-        text-align: center;
-        text-shadow: 0 0 2px black;
-    }
-
-    .numbertext {
-        color: white;
-        font-size: 20px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-        font-weight: 900;
-    }
-
-    /* Buttons below img */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        margin-bottom: 200px;
-    }
-    
-    .active, .dot:hover {
-        background-color: #717171;
-    }
-
-    /* Description positionning under slider */
-
-    .description {
-        position: absolute;
-        margin-top: 80px;
-        text-align: center;
-        font-size: 17px;
-    }
-
-    /* b. Animation fading img  */
-
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-    
-    @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-      
-    @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    /* Media Queries */
-
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-        .titleBlockOne{
-            position: absolute;
-            bottom: 110px;
-            right: 20px;
-            border-radius: 2px;
-            opacity: 0.7;
-            background-color: black;
-            text-transform: uppercase;
-            color: white;
-            padding: 20px;
-        }
-    
-        .titleBlockTwo{
-            position: absolute;
-            bottom: 100px;
-            left: 20px;
-            opacity: 0.7;
-            border-radius: 2px;
-            background-color: black;
-            text-transform: uppercase;
-            color: white;
-            padding: 20px;
-        }
-    
-        .titleBlockThree{
-            position: absolute;
-            bottom: 130px;
-            left:  420px;
-            opacity: 0.7;
-            border-radius: 2px;
-            background-color: black;
-            text-transform: uppercase;
-            color: white;
-            padding: 20px;
-        }
-    
-        .titleBlockFour{
-            position: absolute;
-            bottom: 160px;
-            left: 20px;
-            opacity: 0.7;
-            border-radius: 2px;
-            background-color: black;
-            text-transform: uppercase;
-            color: white;
-            padding: 20px;
-        }
-    }
-  
-
-/* ---------------------------------------------------------------------------------*/
-
-    /* 3. DECOUVREZ */
-
-    /* a. General */
+/* a. General */
 
 
 .title h1 {
@@ -815,12 +733,13 @@ footer li {
 .info h3 {
     margin-right: 10px;
     margin-left: 20px;
-    font-size: 32px;
+    font-size: 20px;
     font-family: 'Buda', cursive;
 }
 
 .info p {
-    font-size: 24px;
+    font-style: italic;
+    font-size: 18px;
     margin-top: 5px;
     font-family: 'Buda', cursive;
 }
@@ -886,13 +805,10 @@ footer li {
 }
 
 
-/* ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------- 4. Contact --------------------------------------------------------------- */
 
-    /*  4. Contact */
-
-    /* a. Map */
-
-
+/* a. Map */
 
 #localisation {
     display: flex;
@@ -902,7 +818,6 @@ footer li {
 }
 
 #adresse{
-    /* animation: fadein 4s, slideLeft 4s ease; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -919,476 +834,113 @@ footer li {
     font-family: 'Buda', cursive;
 }
 
-  .card h2{
+.card h2{
     order:-1;
     text-align:center;
     margin-bottom: 20px;
     margin-top: 20px;
-  }
+}
 
-  .card {
+.card {
     display:flex;
     flex:1;
     flex-direction:column;
     justify-content:space-around;
-  } 
+} 
 
-    /* b. Formulaire */
-
-    .responsiveForm {
-        display: none;
-    }
-
-    .formulaire {
-       margin-bottom: 50px;
-       height: auto;
-       width: 100%;
-       justify-content: center;
-       align-items: center;
-       display: flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-    }
- 
-
-    .formulaire h2 {
-        color: grey;
-        text-align: center;
-        height: 0;
-        overflow: hidden;
-        animation: slide 2s ease forwards;
-        font-family: 'Buda', cursive;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        width: 40% auto;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    #inputText, #inputEmail {
-        width: 50%;
-        height: 40px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        text-align: center;
-        background-color: rgba(50, 50, 50, 0.7);
-        color:rgb(238, 240, 241);
-        font-family: 'Buda', cursive;
-        border-radius: 2px;
-    }
-
-    #inputMessage {
-        margin-top: 30px;
-        width: 70%;
-        background-color: rgba(50, 50, 50, 0.7);
-        color: rgb(238, 240, 241);
-        font-family: 'Buda', cursive;
-        border-radius: 2px;
-    }
-
-    #contactForm {
-        background-image: url(Images/backgroundForm.jpeg);
-        background-repeat:round;
-        border-radius: 3px;
-        border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        height: 600px;
-        margin: 0px 20px;
-    }
-
-    #submitBtn {
-        cursor: pointer;
-        margin-top: 20px;
-        height: 60px;
-        width: 20%;
-        opacity: 0.8;
-        border-radius: 8px;
-        background-color: rgb(151, 116, 10);
-        border: 1px solid black;
-        color: rgb(238, 240, 241);
-        font-size: 32px;
-        font-family: 'Buda', cursive;
-    }
-
-    
-
-
- /* -------------------------------------------*/
-
-    /* 5. RESPONSIVE */
-
-    /* a. General */
-
-    @media only screen and (max-width: 1024px) {
-        /* Cacher le menu gÃ©nÃ©ral en responsive */
-
-        #menu {
-            display: none;
-        }
-
-
-        .topnav {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        } 
-
-        #logo {
-            display:flex;
-            align-content: center;
-        }
-
-        #menuResponsive {
-            display: block;
-            position: absolute;
-            justify-content: center;
-            background-color: rgba(50, 50, 50, 0.7);
-            right: 0;
-            top: 0;
-            margin: 0;
-            width: 100%;
-            height: 200px;
-            z-index: 99;
-            transform-origin: 0% 0%;
-            transform: translate(200%, 0);
-            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-        }
-
-        #menuResponsive.open {
-            transform: none;
-            position: fixed;
-            width: 100%;
-            height: auto;
-        }
-
-        #menuResponsive a {
-            font-size: 24px;
-            font-family: 'Buda', cursive;
-            font-weight: 100;
-        }
-
-        #menuResponsive ul {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            background-color:rgba(50, 50, 50, 0.9);
-            
-            position: absolute;
-            margin:0;
-            right: 0;
-            top: 0;
-            width: 100%;
-            min-width: 200px;
-            height: auto;
-        }
-
-        #menuResponsive li {
-            background-color: rgba(50, 50, 50, 0.1);
-            width: 100%;
-            margin-bottom: 10px;
-        
-        }
-
-        #burger {
-            display: flex;
-            align-items: center;
-            margin: 16px;
-            width: 33px;
-            height: 28px;
-            z-index: 99;
-            user-select: none;
-            cursor: pointer;
-        }
-
-
-        #homeLink {
-            display: block;
-            font-size: 24px;
-        }
-
-        
-
-         #main {
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        footer {
-            display: none;
-        }
-
-        #footerResponsive {
-            display: flex;
-            max-height: 60px;
-            width: 100%;
-     
-           justify-content: space-between;
-           align-content: flex-end;
-           position: absolute;
-           bottom: 0;
-       
-        }
-
-        #footerResponsive > ul {
-            display: flex;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            width: 100%;
-            justify-content: space-evenly;
-        }
-
-
-    /* b. Index */ 
-
-    @media only screen and (max-width: 1024px) {
-        
-    .hero {
-        width: auto;        
-    }
-
-    /* .video iframe{
-    .histoire {
-        width: 90%;
-    }
-
-    .video iframe{
-        width: 100%;
-        height: 100%;
-    } */
-
-    .video iframe { 
-        left:0; 
-        top:0; 
-        height:300px; 
-        width:100%;
-        
-    }
-
-    .video {
-        padding: 0px 10px;
-    }
-
-
-
-    .presentationHome {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-    }
-    
-
-    #welcome {
-        display: none;
-        width: auto;
-        height: auto;
-        position: fixed;
-        justify-self: center;
-    }
-
-    .histoire {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-       
-    }
-
-        #general {
-            width: 100%;
-            margin-bottom: 50px;
-        }
-        #local {
-            width: 100%;
-            margin-bottom: 50px;
-        }
-
-    }
-    /* c. Explorer */
-
-    @media only screen and (max-width: 376px) {
-
-       #rightOne, #leftOne{
-        display: flex;
-        justify-content: center;
-        position: relative;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #rightTwo, #leftTwo{
-        display: flex;
-        justify-content: center;
-        position: relative;
-        margin-left: 10px;
-        margin-right: 10px;
-        
-    }
-    
-
-
-    .titleBlockOne{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate( -50%, -50% );
-    }
-
-    .imgBlockOne{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-           
-        }
-
-        .imgBlockTwo{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-
-
-
-    /* d. Découvrez */
-
-    @media only screen and (max-width: 1024px) {
-    .info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        margin-left: 20px;
-    }
-
-    .overlay {
-        display: flex;
-        position: absolute; 
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        background-color: rgba(60, 60, 60, 0.8);
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        transition: .5s ease;
-        justify-content: center;
-        align-items:center;
-        text-align: center;
-    }
-
-    /* Contact */ 
-
-    #responsiveFormTitle {
-        display: none;
-    }
-
-    @media only screen and (max-width: 1024px) {
-
-    
-
-    #contactForm {
-        display: flex;
-        width: 80%;
-        justify-self: center;
-    }
-
-    #localisation {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #submitBtn {
-        cursor: pointer;
-        margin-top: 20px;
-        height: 60px;
-        width: 30%;
-        opacity: 0.8;
-        border-radius: 8px;
-        background-color: rgb(151, 116, 10);
-        border: 1px solid black;
-        color: rgb(238, 240, 241);
-        font-size: 32px;
-        font-family: 'Buda', cursive;
-    }
-    
-
-    @media only screen and (max-width: 376px) {
-
-        .formulaire {
-            display: none;
-            position: center;
-            width: auto;
-        }
-
-        #responsiveFormTitle {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            color:rgb(250, 104, 87);
-        }
-
-        .responsiveForm {
-            display: center;
-            background-color: rgba(50, 50, 50, 0.7);
-            margin-bottom: 20px;
-        }
-
-        #responsiveText {
-            height: 30px;
-            width: 80%;
-            margin-bottom: 5px;
-            margin-top: 10px;
-            text-align: center;
-            font-family: 'Buda', cursive;
-
-        }
-
-        #responsiveEmail {
-            height: 30px;
-            width: 80%;
-            margin-bottom: 5px;
-            text-align: center;
-            font-family: 'Buda', cursive;
-        }
-
-        #responsiveArea {
-            width: 80%;
-            height: 200px;
-            margin-bottom: 10px;
-            font-family: 'Buda', cursive;
-        }
-
-        #responsiveSubmitBtn {
-            display: flex;
-            height: 50px;
-            width: 50%;
-            border-radius: 25px;
-            margin-bottom: 10px;
-            color:rgb(250, 104, 87);
-            justify-content: center;
-            align-content: center;
-            font-size: 28px;
-            font-family: 'Buda', cursive;
-            font-weight: 700;
-        }
-
-        #responsiveSubmitBtn:active {
-            background-color: rgb(250, 104, 87);
-            color: rgba(206, 196, 168, 0.9)
-        }
-    }
+#adresse h2{
+    padding-bottom: 10px;
 }
+#map{
+    display: block;
 }
+
+#responsiveMap{
+    display: none;
 }
+
+ /* b. Form */
+
+.responsiveForm {
+    display: none;
 }
+
+#responsiveFormTitle {
+    display: none; 
+} 
+
+.formulaireContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.formulaire{
+	width: 50%;
+	padding: 20px 12px 10px 20px;
+	font-size: 13px;
+    font-family: 'Josefin Slab', serif;
+    border: 1px solid black;
+    box-shadow: -2px 3px 3px rgb(54, 54, 54);
+    margin-bottom: 30px;
+}
+.contactForm{
+    text-transform: uppercase;
+    text-align: center;
+	font-weight: bold;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.formulaire label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.formulaire label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.formulaire span.required{
+	color:rgb(136, 50, 50);
+}
+.formulaire .tel-number-field{
+	width: 48%;
+	text-align: center;
+}
+.formulaire input.input-field, .formulaiere .select-field{
+	width: 48%;	
+}
+.formulaire input.input-field, .formulaire .tel-number-field, .formulaire .textarea-field, .formulaire .select-field{
+	box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.formulaire .input-field:focus, .formulaire .tel-number-field:focus, .formulaire .textarea-field:focus,  .formulaire .select-field:focus{
+	border: 1px solid rgb(136, 50, 50);
+}
+.formulaire .textarea-field{
+	height:100px;
+	width: 55%;
+}
+.formulaire input[type=submit],
+.formulaire input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #a0a0a0;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+}
+
+.formulaire input[type=submit]:hover,
+.formulaire input[type=button]:hover{
+	background: rgb(136, 50, 50);
+	color: #fff;
+}
+

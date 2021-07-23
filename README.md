@@ -1,6 +1,15 @@
 # G1-siteCorte
 ------------------------------------------------------
+23/07/2021:
 
+- Finalisation responsive
+- Changement style page Explorer 
+- Indentation finale 
+- Separation style.css et responsive.css
+- Creation nouveau formulaire
+- Poffinage + Dernière vérifications
+
+------------------------------------------------------
 21/07/2021:
 
 - Mise en commun du code

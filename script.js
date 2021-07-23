@@ -1,4 +1,4 @@
-// ---------- MENU BURGER -------- //
+// -------------------------- MENU BURGER ------------------------ //
 
 let burger = document.getElementById("burger");
 let closeMenu = document.getElementById('closeMenu');
@@ -47,7 +47,7 @@ closeMenu.addEventListener('click', function(){
   closeResponsiveMenu();
 });
 
-// -------- EXPLORER -------- //
+// ------------------------ EXPLORER ------------------------ //
 
 // Slider animation
 
@@ -110,7 +110,7 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-// --------- CONTACT -------- //
+// ------------------------- CONTACT ------------------------ //
 
 let inputText = document.getElementById('inputText');
 let inputEmail = document.getElementById('inputEmail');
