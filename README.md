@@ -1,4 +1,8 @@
-# G1-siteCorte
+Projet réalisé dans le cadre de la formation Développeur Web de la Wild Code School.
+
+  "Réalisez un site vitrine grâce à HTML, CSS et JavaScript."
+
+# Site Corte
 ------------------------------------------------------
 23/07/2021:
 
