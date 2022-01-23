@@ -1,0 +1,361 @@
+
+
+/* -------------------------------------------------- RESPONSIVE --------------------------------------------------*/
+
+/* -------------------------------------------------- a. General -------------------------------------------------- */
+
+/* ---- TABLETTES ---- */
+
+@media only screen and (max-width: 1024px) {
+    /* Cacher le menu gÃ©nÃ©ral en responsive */
+
+    #menu {
+        display: none;
+    }
+
+    .topnav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+    #logo {
+        display:flex;
+        align-content: center;
+    }
+
+    #menuResponsive {
+        display: block;
+        position: absolute;
+        justify-content: center;
+        background-color: rgba(50, 50, 50, 0.7);
+        right: 0;
+        top: 0;
+        margin: 0;
+        width: 100%;
+        height: 200px;
+        z-index: 99;
+        transform-origin: 0% 0%;
+        transform: translate(200%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menuResponsive.open {
+        transform: none;
+        position: fixed;
+        width: 100%;
+        height: auto;
+    }
+
+    #menuResponsive a {
+        font-size: 24px;
+        font-family: 'Buda', cursive;
+        font-weight: 100;
+    }
+
+    #menuResponsive ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color:rgba(50, 50, 50, 0.9);
+            
+        position: absolute;
+        margin:0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        min-width: 200px;
+        height: auto;
+    }
+
+    #menuResponsive li {
+        background-color: rgba(50, 50, 50, 0.1);
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+
+    #burger {
+        display: flex;
+        align-items: center;
+        margin: 16px;
+        width: 33px;
+        height: 28px;
+        z-index: 99;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    #homeLink {
+        display: block;
+        font-size: 24px;
+    }
+
+    #main {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #footerResponsive {
+        display: flex;
+        max-height: 60px;
+        width: 100%;
+        justify-content: space-between;
+        align-content: flex-end;
+        position: absolute;
+        bottom: 0;
+       }
+
+    #footerResponsive > ul {
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+/* -------------------------------------------------- b. Index -------------------------------------------------- */ 
+
+/* ---- TABLETTES ---- */
+
+@media only screen and (max-width: 1024px) {
+        
+    .hero {
+        width: auto;        
+    }
+
+    .histoire {
+        width: 90%;
+    }
+
+    .video iframe { 
+        left:0; 
+        top:0; 
+        height:300px; 
+        width:100%;
+    }
+
+    .video {
+        padding: 0px 10px;
+    }
+
+    .presentationHome {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    
+
+    #welcome {
+        display: none;
+        width: auto;
+        height: auto;
+        position: fixed;
+        justify-self: center;
+    }
+
+    .histoire {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       
+    }
+
+    #general {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #local {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #timeline{
+    display: none;
+    }
+
+    #responsiveTimeline{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    #responsiveTimeline h2{
+        border-bottom: 1px solid black;
+        text-align: center  ;
+        width: 100%;
+    }
+}
+/* -------------------------------------------------- c. Explorer -------------------------------------------------- */
+
+/* ---- TABLETTES ---- */
+
+@media only screen and (max-width: 1024px) {
+
+    #rightOne, #leftOne{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+ 
+    #rightTwo, #leftTwo{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+     
+ 
+    .imgBlockOne{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+ 
+    .imgBlockTwo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mer{
+        margin: 40px;
+    }
+}
+   
+
+/* ---- SMARTPHONES ---- */
+
+@media only screen and (max-width: 376px) {
+
+    #rightOne, #leftOne{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+ 
+    #rightTwo, #leftTwo{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+     
+ 
+    .imgBlockOne{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+ 
+    .imgBlockTwo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* -------------------------------------------------- d. Découvrez -------------------------------------------------- */
+
+/* ---- TABLETTES ---- */
+
+@media only screen and (max-width: 1024px) {
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .overlay {
+        display: flex;
+        position: absolute; 
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(60, 60, 60, 0.8);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+
+    .presentation p{
+        font-size: 15px;
+    }
+}
+
+/* -------------------------------------------------- e. Contact --------------------------------------------------*/ 
+
+/* ---- TABLETTES ---- */
+
+@media only screen and (max-width: 1024px) {
+
+    #localisation {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #map{
+        display: none;
+    }
+
+    #responsiveMap{
+        display: block;
+    }
+}
+
+/* ---- SMARTPHONES ---- */
+
+@media only screen and (max-width: 500px) {
+
+    .formulaireContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulaire{
+        width: 100%;
+        margin: 15px;
+    }
+
+    .formulaire label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .formulaire span{
+        margin-bottom: 5px;
+    }
+}

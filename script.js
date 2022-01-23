@@ -1,4 +1,53 @@
+// -------------------------- MENU BURGER ------------------------ //
 
+let burger = document.getElementById("burger");
+let closeMenu = document.getElementById('closeMenu');
+
+
+
+function showResponsiveMenu() {
+  var menu = document.getElementById('menuResponsive');
+  var icon = document.getElementById('hamburgerIcon');
+  var main = document.getElementById('main');
+ 
+
+
+  if (menu.className === "") {
+    menu.className = "open";
+    icon.className = "open";
+    main.style.overflowY = "hidden";
+  } else {
+    menu.className = "";
+    icon.className ="";
+    main.style.overflowY ="";
+  }
+}
+
+function closeResponsiveMenu() {
+  let menu = document.getElementById('menuResponsive');
+  let icon = document.getElementById('hamburgerIcon');
+  let main = document.getElementById('main');
+ 
+  if (menu.className === "open") {
+    menu.className = "";
+    icon.className = "";
+    main.style.overflowY = "";
+  } else {
+    menu.className = "open";
+    icon.className ="open";
+    main.style.overflowY ="hidden";
+  }
+}
+
+burger.addEventListener('click', function(){
+  showResponsiveMenu();
+});
+
+closeMenu.addEventListener('click', function(){
+  closeResponsiveMenu();
+});
+
+// ------------------------ EXPLORER ------------------------ //
 
 // Slider animation
 
@@ -6,11 +55,13 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -58,3 +109,23 @@ let span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+// ------------------------- CONTACT ------------------------ //
+
+let inputText = document.getElementById('inputText');
+let inputEmail = document.getElementById('inputEmail');
+let submitBtn = document.getElementById('submitBtn');
+
+
+inputText.addEventListener("click", ()=> {
+    inputText.value = "";
+});
+inputEmail.addEventListener("click", ()=> {
+    inputEmail.value="";
+});
+
+submitBtn.addEventListener("click", () => {
+        alert('Merci pour votre message !');
+});
+
+
